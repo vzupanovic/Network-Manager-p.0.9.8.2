@@ -1,0 +1,168 @@
+<!-- ##### SECTION Title ##### -->
+NMRemoteConnection
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT NMRemoteConnection ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL NMRemoteConnection::removed ##### -->
+<para>
+
+</para>
+
+@nmremoteconnection: the object which received the signal.
+
+<!-- ##### SIGNAL NMRemoteConnection::updated ##### -->
+<para>
+
+</para>
+
+@nmremoteconnection: the object which received the signal.
+
+<!-- ##### SIGNAL NMRemoteConnection::visible ##### -->
+<para>
+
+</para>
+
+@nmremoteconnection: the object which received the signal.
+@arg1: 
+
+<!-- ##### ARG NMRemoteConnection:bus ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG NMRemoteConnection:dbus-connection ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG NMRemoteConnection:dbus-path ##### -->
+<para>
+
+</para>
+
+<!-- ##### STRUCT NMRemoteConnectionClass ##### -->
+<para>
+
+</para>
+
+@parent_class: 
+@updated: 
+@removed: 
+@_reserved1: 
+@_reserved2: 
+@_reserved3: 
+@_reserved4: 
+@_reserved5: 
+@_reserved6: 
+
+<!-- ##### USER_FUNCTION NMRemoteConnectionCommitFunc ##### -->
+<para>
+
+</para>
+
+@connection: 
+@error: 
+@user_data: 
+
+
+<!-- ##### USER_FUNCTION NMRemoteConnectionDeleteFunc ##### -->
+<para>
+
+</para>
+
+@connection: 
+@error: 
+@user_data: 
+
+
+<!-- ##### USER_FUNCTION NMRemoteConnectionGetSecretsFunc ##### -->
+<para>
+
+</para>
+
+@connection: 
+@secrets: 
+@error: 
+@user_data: 
+
+
+<!-- ##### MACRO NM_REMOTE_CONNECTION_REMOVED ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO NM_REMOTE_CONNECTION_UPDATED ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION nm_remote_connection_commit_changes ##### -->
+<para>
+
+</para>
+
+@connection: 
+@callback: 
+@user_data: 
+
+
+<!-- ##### FUNCTION nm_remote_connection_delete ##### -->
+<para>
+
+</para>
+
+@connection: 
+@callback: 
+@user_data: 
+
+
+<!-- ##### FUNCTION nm_remote_connection_get_secrets ##### -->
+<para>
+
+</para>
+
+@connection: 
+@setting_name: 
+@callback: 
+@user_data: 
+
+
+<!-- ##### FUNCTION nm_remote_connection_new ##### -->
+<para>
+
+</para>
+
+@bus: 
+@path: 
+@Returns: 
+
+

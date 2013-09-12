@@ -1,0 +1,660 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>NMRemoteSettings</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="libnm-glib Reference Manual">
+<link rel="up" href="ch02.html" title="libnm-glib API Reference">
+<link rel="prev" href="NMRemoteConnection.html" title="NMRemoteConnection">
+<link rel="next" href="libnm-glib-nm-types.html" title="nm-types">
+<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="2">
+<tr valign="middle">
+<td><a accesskey="p" href="NMRemoteConnection.html"><img src="left.png" width="24" height="24" border="0" alt="Prev"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="24" height="24" border="0" alt="Up"></a></td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="24" height="24" border="0" alt="Home"></a></td>
+<th width="100%" align="center">libnm-glib Reference Manual</th>
+<td><a accesskey="n" href="libnm-glib-nm-types.html"><img src="right.png" width="24" height="24" border="0" alt="Next"></a></td>
+</tr>
+<tr><td colspan="5" class="shortcuts">
+<a href="#NMRemoteSettings.synopsis" class="shortcut">Top</a>
+                   | 
+                  <a href="#NMRemoteSettings.description" class="shortcut">Description</a>
+                   | 
+                  <a href="#NMRemoteSettings.object-hierarchy" class="shortcut">Object Hierarchy</a>
+                   | 
+                  <a href="#NMRemoteSettings.implemented-interfaces" class="shortcut">Implemented Interfaces</a>
+                   | 
+                  <a href="#NMRemoteSettings.properties" class="shortcut">Properties</a>
+                   | 
+                  <a href="#NMRemoteSettings.signals" class="shortcut">Signals</a>
+</td></tr>
+</table>
+<div class="refentry">
+<a name="NMRemoteSettings"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="NMRemoteSettings.top_of_page"></a>NMRemoteSettings</span></h2>
+<p>NMRemoteSettings</p>
+</td>
+<td valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsynopsisdiv">
+<a name="NMRemoteSettings.synopsis"></a><h2>Synopsis</h2>
+<pre class="synopsis">struct              <a class="link" href="NMRemoteSettings.html#NMRemoteSettings-struct" title="struct NMRemoteSettings">NMRemoteSettings</a>;
+<span class="returnvalue">void</span>                (<a class="link" href="NMRemoteSettings.html#NMRemoteSettingsAddConnectionFunc" title="NMRemoteSettingsAddConnectionFunc ()">*NMRemoteSettingsAddConnectionFunc</a>)
+                                                        (<em class="parameter"><code><a class="link" href="NMRemoteSettings.html" title="NMRemoteSettings"><span class="type">NMRemoteSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="NMRemoteConnection.html" title="NMRemoteConnection"><span class="type">NMRemoteConnection</span></a> *connection</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> *error</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);
+struct              <a class="link" href="NMRemoteSettings.html#NMRemoteSettingsClass" title="struct NMRemoteSettingsClass">NMRemoteSettingsClass</a>;
+enum                <a class="link" href="NMRemoteSettings.html#NMRemoteSettingsError" title="enum NMRemoteSettingsError">NMRemoteSettingsError</a>;
+<span class="returnvalue">void</span>                (<a class="link" href="NMRemoteSettings.html#NMRemoteSettingsSaveHostnameFunc" title="NMRemoteSettingsSaveHostnameFunc ()">*NMRemoteSettingsSaveHostnameFunc</a>) (<em class="parameter"><code><a class="link" href="NMRemoteSettings.html" title="NMRemoteSettings"><span class="type">NMRemoteSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> *error</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);
+#define             <a class="link" href="NMRemoteSettings.html#NM-REMOTE-SETTINGS-BUS:CAPS" title="NM_REMOTE_SETTINGS_BUS">NM_REMOTE_SETTINGS_BUS</a>
+#define             <a class="link" href="NMRemoteSettings.html#NM-REMOTE-SETTINGS-CAN-MODIFY:CAPS" title="NM_REMOTE_SETTINGS_CAN_MODIFY">NM_REMOTE_SETTINGS_CAN_MODIFY</a>
+#define             <a class="link" href="NMRemoteSettings.html#NM-REMOTE-SETTINGS-CONNECTIONS-READ:CAPS" title="NM_REMOTE_SETTINGS_CONNECTIONS_READ">NM_REMOTE_SETTINGS_CONNECTIONS_READ</a>
+#define             <a class="link" href="NMRemoteSettings.html#NM-REMOTE-SETTINGS-ERROR:CAPS" title="NM_REMOTE_SETTINGS_ERROR">NM_REMOTE_SETTINGS_ERROR</a>
+#define             <a class="link" href="NMRemoteSettings.html#NM-REMOTE-SETTINGS-HOSTNAME:CAPS" title="NM_REMOTE_SETTINGS_HOSTNAME">NM_REMOTE_SETTINGS_HOSTNAME</a>
+#define             <a class="link" href="NMRemoteSettings.html#NM-REMOTE-SETTINGS-NEW-CONNECTION:CAPS" title="NM_REMOTE_SETTINGS_NEW_CONNECTION">NM_REMOTE_SETTINGS_NEW_CONNECTION</a>
+#define             <a class="link" href="NMRemoteSettings.html#NM-REMOTE-SETTINGS-SERVICE-RUNNING:CAPS" title="NM_REMOTE_SETTINGS_SERVICE_RUNNING">NM_REMOTE_SETTINGS_SERVICE_RUNNING</a>
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="NMRemoteSettings.html#nm-remote-settings-add-connection" title="nm_remote_settings_add_connection ()">nm_remote_settings_add_connection</a>   (<em class="parameter"><code><a class="link" href="NMRemoteSettings.html" title="NMRemoteSettings"><span class="type">NMRemoteSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code><a href="http://projects.gnome.org/NetworkManager/developers/libnm-util/09/NMConnection.html"><span class="type">NMConnection</span></a> *connection</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="NMRemoteSettings.html#NMRemoteSettingsAddConnectionFunc" title="NMRemoteSettingsAddConnectionFunc ()"><span class="type">NMRemoteSettingsAddConnectionFunc</span></a> callback</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>              <a class="link" href="NMRemoteSettings.html#nm-remote-settings-error-quark" title="nm_remote_settings_error_quark ()">nm_remote_settings_error_quark</a>      (<em class="parameter"><code><span class="type">void</span></code></em>);
+<a class="link" href="NMRemoteConnection.html" title="NMRemoteConnection"><span class="returnvalue">NMRemoteConnection</span></a> * <a class="link" href="NMRemoteSettings.html#nm-remote-settings-get-connection-by-path" title="nm_remote_settings_get_connection_by_path ()">nm_remote_settings_get_connection_by_path</a>
+                                                        (<em class="parameter"><code><a class="link" href="NMRemoteSettings.html" title="NMRemoteSettings"><span class="type">NMRemoteSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">char</span> *path</code></em>);
+<a class="link" href="NMRemoteConnection.html" title="NMRemoteConnection"><span class="returnvalue">NMRemoteConnection</span></a> * <a class="link" href="NMRemoteSettings.html#nm-remote-settings-get-connection-by-uuid" title="nm_remote_settings_get_connection_by_uuid ()">nm_remote_settings_get_connection_by_uuid</a>
+                                                        (<em class="parameter"><code><a class="link" href="NMRemoteSettings.html" title="NMRemoteSettings"><span class="type">NMRemoteSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">char</span> *uuid</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *            <a class="link" href="NMRemoteSettings.html#nm-remote-settings-list-connections" title="nm_remote_settings_list_connections ()">nm_remote_settings_list_connections</a> (<em class="parameter"><code><a class="link" href="NMRemoteSettings.html" title="NMRemoteSettings"><span class="type">NMRemoteSettings</span></a> *settings</code></em>);
+<a class="link" href="NMRemoteSettings.html" title="NMRemoteSettings"><span class="returnvalue">NMRemoteSettings</span></a> *  <a class="link" href="NMRemoteSettings.html#nm-remote-settings-new" title="nm_remote_settings_new ()">nm_remote_settings_new</a>              (<em class="parameter"><code><span class="type">DBusGConnection</span> *bus</code></em>);
+<span class="returnvalue">void</span>                <a class="link" href="NMRemoteSettings.html#nm-remote-settings-new-async" title="nm_remote_settings_new_async ()">nm_remote_settings_new_async</a>        (<em class="parameter"><code><span class="type">DBusGConnection</span> *bus</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);
+<a class="link" href="NMRemoteSettings.html" title="NMRemoteSettings"><span class="returnvalue">NMRemoteSettings</span></a> *  <a class="link" href="NMRemoteSettings.html#nm-remote-settings-new-finish" title="nm_remote_settings_new_finish ()">nm_remote_settings_new_finish</a>       (<em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="NMRemoteSettings.html#nm-remote-settings-save-hostname" title="nm_remote_settings_save_hostname ()">nm_remote_settings_save_hostname</a>    (<em class="parameter"><code><a class="link" href="NMRemoteSettings.html" title="NMRemoteSettings"><span class="type">NMRemoteSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">char</span> *hostname</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="NMRemoteSettings.html#NMRemoteSettingsSaveHostnameFunc" title="NMRemoteSettingsSaveHostnameFunc ()"><span class="type">NMRemoteSettingsSaveHostnameFunc</span></a> callback</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);
+</pre>
+</div>
+<div class="refsect1">
+<a name="NMRemoteSettings.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="synopsis">
+  <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+   +----NMRemoteSettings
+</pre>
+</div>
+<div class="refsect1">
+<a name="NMRemoteSettings.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+NMRemoteSettings implements
+ <a href="http://library.gnome.org/devel/gio/unstable/GInitable.html">GInitable</a> and  <a href="http://library.gnome.org/devel/gio/unstable/GAsyncInitable.html">GAsyncInitable</a>.</p>
+</div>
+<div class="refsect1">
+<a name="NMRemoteSettings.properties"></a><h2>Properties</h2>
+<pre class="synopsis">
+  "<a class="link" href="NMRemoteSettings.html#NMRemoteSettings--bus" title='The "bus" property'>bus</a>"                      <span class="type">DBusGConnection</span>*      : Read / Write / Construct Only
+  "<a class="link" href="NMRemoteSettings.html#NMRemoteSettings--can-modify" title='The "can-modify" property'>can-modify</a>"               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read
+  "<a class="link" href="NMRemoteSettings.html#NMRemoteSettings--hostname" title='The "hostname" property'>hostname</a>"                 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read
+  "<a class="link" href="NMRemoteSettings.html#NMRemoteSettings--service-running" title='The "service-running" property'>service-running</a>"          <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read
+</pre>
+</div>
+<div class="refsect1">
+<a name="NMRemoteSettings.signals"></a><h2>Signals</h2>
+<pre class="synopsis">
+  "<a class="link" href="NMRemoteSettings.html#NMRemoteSettings-connections-read" title='The "connections-read" signal'>connections-read</a>"                               : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a>
+  "<a class="link" href="NMRemoteSettings.html#NMRemoteSettings-new-connection" title='The "new-connection" signal'>new-connection</a>"                                 : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a>
+</pre>
+</div>
+<div class="refsect1">
+<a name="NMRemoteSettings.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="NMRemoteSettings.details"></a><h2>Details</h2>
+<div class="refsect2">
+<a name="NMRemoteSettings-struct"></a><h3>struct NMRemoteSettings</h3>
+<pre class="programlisting">struct NMRemoteSettings;</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="NMRemoteSettingsAddConnectionFunc"></a><h3>NMRemoteSettingsAddConnectionFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                (*NMRemoteSettingsAddConnectionFunc)
+                                                        (<em class="parameter"><code><a class="link" href="NMRemoteSettings.html" title="NMRemoteSettings"><span class="type">NMRemoteSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="NMRemoteConnection.html" title="NMRemoteConnection"><span class="type">NMRemoteConnection</span></a> *connection</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> *error</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="NMRemoteSettingsClass"></a><h3>struct NMRemoteSettingsClass</h3>
+<pre class="programlisting">struct NMRemoteSettingsClass {
+	GObjectClass parent;
+
+	/* Signals */
+	void (*new_connection) (NMRemoteSettings *settings,
+	                        NMRemoteConnection *connection);
+
+	void (*connections_read) (NMRemoteSettings *settings);
+
+	/* Padding for future expansion */
+	void (*_reserved1) (void);
+	void (*_reserved2) (void);
+	void (*_reserved3) (void);
+	void (*_reserved4) (void);
+	void (*_reserved5) (void);
+	void (*_reserved6) (void);
+};
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="NMRemoteSettingsError"></a><h3>enum NMRemoteSettingsError</h3>
+<pre class="programlisting">typedef enum {
+	NM_REMOTE_SETTINGS_ERROR_UNKNOWN = 0,            /*&lt; nick=UnknownError &gt;*/
+	NM_REMOTE_SETTINGS_ERROR_CONNECTION_REMOVED,     /*&lt; nick=ConnectionRemoved &gt;*/
+	NM_REMOTE_SETTINGS_ERROR_CONNECTION_UNAVAILABLE, /*&lt; nick=ConnectionUnavailable &gt;*/
+} NMRemoteSettingsError;
+</pre>
+<p>
+Describes errors that may result from operations involving a <a class="link" href="NMRemoteSettings.html" title="NMRemoteSettings"><span class="type">NMRemoteSettings</span></a>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="NM-REMOTE-SETTINGS-ERROR-UNKNOWN:CAPS"></a><span class="term"><code class="literal">NM_REMOTE_SETTINGS_ERROR_UNKNOWN</code></span></p></td>
+<td>unknown or unclassified error
+</td>
+</tr>
+<tr>
+<td><p><a name="NM-REMOTE-SETTINGS-ERROR-CONNECTION-REMOVED:CAPS"></a><span class="term"><code class="literal">NM_REMOTE_SETTINGS_ERROR_CONNECTION_REMOVED</code></span></p></td>
+<td>the <a class="link" href="NMRemoteConnection.html" title="NMRemoteConnection"><span class="type">NMRemoteConnection</span></a> object
+  was removed before it was completely initialized
+</td>
+</tr>
+<tr>
+<td><p><a name="NM-REMOTE-SETTINGS-ERROR-CONNECTION-UNAVAILABLE:CAPS"></a><span class="term"><code class="literal">NM_REMOTE_SETTINGS_ERROR_CONNECTION_UNAVAILABLE</code></span></p></td>
+<td>the <a class="link" href="NMRemoteConnection.html" title="NMRemoteConnection"><span class="type">NMRemoteConnection</span></a> object
+  is not visible or otherwise unreadable
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="NMRemoteSettingsSaveHostnameFunc"></a><h3>NMRemoteSettingsSaveHostnameFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                (*NMRemoteSettingsSaveHostnameFunc) (<em class="parameter"><code><a class="link" href="NMRemoteSettings.html" title="NMRemoteSettings"><span class="type">NMRemoteSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> *error</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="NM-REMOTE-SETTINGS-BUS:CAPS"></a><h3>NM_REMOTE_SETTINGS_BUS</h3>
+<pre class="programlisting">#define NM_REMOTE_SETTINGS_BUS             "bus"
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="NM-REMOTE-SETTINGS-CAN-MODIFY:CAPS"></a><h3>NM_REMOTE_SETTINGS_CAN_MODIFY</h3>
+<pre class="programlisting">#define NM_REMOTE_SETTINGS_CAN_MODIFY      "can-modify"
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="NM-REMOTE-SETTINGS-CONNECTIONS-READ:CAPS"></a><h3>NM_REMOTE_SETTINGS_CONNECTIONS_READ</h3>
+<pre class="programlisting">#define NM_REMOTE_SETTINGS_CONNECTIONS_READ  "connections-read"
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="NM-REMOTE-SETTINGS-ERROR:CAPS"></a><h3>NM_REMOTE_SETTINGS_ERROR</h3>
+<pre class="programlisting">#define NM_REMOTE_SETTINGS_ERROR nm_remote_settings_error_quark ()
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="NM-REMOTE-SETTINGS-HOSTNAME:CAPS"></a><h3>NM_REMOTE_SETTINGS_HOSTNAME</h3>
+<pre class="programlisting">#define NM_REMOTE_SETTINGS_HOSTNAME        "hostname"
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="NM-REMOTE-SETTINGS-NEW-CONNECTION:CAPS"></a><h3>NM_REMOTE_SETTINGS_NEW_CONNECTION</h3>
+<pre class="programlisting">#define NM_REMOTE_SETTINGS_NEW_CONNECTION    "new-connection"
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="NM-REMOTE-SETTINGS-SERVICE-RUNNING:CAPS"></a><h3>NM_REMOTE_SETTINGS_SERVICE_RUNNING</h3>
+<pre class="programlisting">#define NM_REMOTE_SETTINGS_SERVICE_RUNNING "service-running"
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="nm-remote-settings-add-connection"></a><h3>nm_remote_settings_add_connection ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            nm_remote_settings_add_connection   (<em class="parameter"><code><a class="link" href="NMRemoteSettings.html" title="NMRemoteSettings"><span class="type">NMRemoteSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code><a href="http://projects.gnome.org/NetworkManager/developers/libnm-util/09/NMConnection.html"><span class="type">NMConnection</span></a> *connection</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="NMRemoteSettings.html#NMRemoteSettingsAddConnectionFunc" title="NMRemoteSettingsAddConnectionFunc ()"><span class="type">NMRemoteSettingsAddConnectionFunc</span></a> callback</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>
+Requests that the remote settings service add the given settings to a new
+connection.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>settings</code></em> :</span></p></td>
+<td>the <a class="link" href="NMRemoteSettings.html" title="NMRemoteSettings"><code class="literal">NMRemoteSettings</code></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>connection</code></em> :</span></p></td>
+<td>the connection to add. Note that this object's settings will be
+added, not the object itself</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>callback</code></em> :</span></p></td>
+<td>callback to be called when the add operation completes. <span class="annotation">[<acronym title="The callback is valid until first called."><span class="acronym">scope async</span></acronym>]</span>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>caller-specific data passed to <em class="parameter"><code>callback</code></em>. <span class="annotation">[<acronym title="This parameter is a 'user_data', for callbacks; many bindings can pass NULL here."><span class="acronym">closure</span></acronym>]</span>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>TRUE if the request was successful, FALSE if it failed</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="nm-remote-settings-error-quark"></a><h3>nm_remote_settings_error_quark ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>              nm_remote_settings_error_quark      (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+Registers an error quark for <a class="link" href="NMRemoteSettings.html" title="NMRemoteSettings"><span class="type">NMRemoteSettings</span></a> if necessary.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody><tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>the error quark used for <a class="link" href="NMRemoteSettings.html" title="NMRemoteSettings"><span class="type">NMRemoteSettings</span></a> errors.</td>
+</tr></tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="nm-remote-settings-get-connection-by-path"></a><h3>nm_remote_settings_get_connection_by_path ()</h3>
+<pre class="programlisting"><a class="link" href="NMRemoteConnection.html" title="NMRemoteConnection"><span class="returnvalue">NMRemoteConnection</span></a> * nm_remote_settings_get_connection_by_path
+                                                        (<em class="parameter"><code><a class="link" href="NMRemoteSettings.html" title="NMRemoteSettings"><span class="type">NMRemoteSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">char</span> *path</code></em>);</pre>
+<p>
+Returns the <a class="link" href="NMRemoteConnection.html" title="NMRemoteConnection"><code class="literal">NMRemoteConnection</code></a> representing the connection at <em class="parameter"><code>path</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>settings</code></em> :</span></p></td>
+<td>the <a class="link" href="NMRemoteSettings.html" title="NMRemoteSettings"><code class="literal">NMRemoteSettings</code></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>path</code></em> :</span></p></td>
+<td>the D-Bus object path of the remote connection</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>the remote connection object on success, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the object was
+not known. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="nm-remote-settings-get-connection-by-uuid"></a><h3>nm_remote_settings_get_connection_by_uuid ()</h3>
+<pre class="programlisting"><a class="link" href="NMRemoteConnection.html" title="NMRemoteConnection"><span class="returnvalue">NMRemoteConnection</span></a> * nm_remote_settings_get_connection_by_uuid
+                                                        (<em class="parameter"><code><a class="link" href="NMRemoteSettings.html" title="NMRemoteSettings"><span class="type">NMRemoteSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">char</span> *uuid</code></em>);</pre>
+<p>
+Returns the <a class="link" href="NMRemoteConnection.html" title="NMRemoteConnection"><code class="literal">NMRemoteConnection</code></a> identified by <em class="parameter"><code>uuid</code></em>.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>settings</code></em> :</span></p></td>
+<td>the <a class="link" href="NMRemoteSettings.html" title="NMRemoteSettings"><code class="literal">NMRemoteSettings</code></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>uuid</code></em> :</span></p></td>
+<td>the UUID of the remote connection</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>the remote connection object on success, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if the object was
+not known. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="nm-remote-settings-list-connections"></a><h3>nm_remote_settings_list_connections ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#GSList"><span class="returnvalue">GSList</span></a> *            nm_remote_settings_list_connections (<em class="parameter"><code><a class="link" href="NMRemoteSettings.html" title="NMRemoteSettings"><span class="type">NMRemoteSettings</span></a> *settings</code></em>);</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>settings</code></em> :</span></p></td>
+<td>the <a class="link" href="NMRemoteSettings.html" title="NMRemoteSettings"><code class="literal">NMRemoteSettings</code></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a
+list containing all connections provided by the remote settings service.
+Each element of the returned list is a <a class="link" href="NMRemoteConnection.html" title="NMRemoteConnection"><code class="literal">NMRemoteConnection</code></a> instance, which is
+owned by the <a class="link" href="NMRemoteSettings.html" title="NMRemoteSettings"><code class="literal">NMRemoteSettings</code></a> object and should not be freed by the caller.
+The returned list is, however, owned by the caller and should be freed
+using <a href="http://library.gnome.org/devel/glib/unstable/glib-Singly-Linked-Lists.html#g-slist-free"><code class="function">g_slist_free()</code></a> when no longer required. <span class="annotation">[<acronym title="Free data container after the code is done."><span class="acronym">transfer container</span></acronym>][<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> NMClient.RemoteConnection]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="nm-remote-settings-new"></a><h3>nm_remote_settings_new ()</h3>
+<pre class="programlisting"><a class="link" href="NMRemoteSettings.html" title="NMRemoteSettings"><span class="returnvalue">NMRemoteSettings</span></a> *  nm_remote_settings_new              (<em class="parameter"><code><span class="type">DBusGConnection</span> *bus</code></em>);</pre>
+<p>
+Creates a new object representing the remote settings service.
+</p>
+<p>
+Note that this will do blocking D-Bus calls to initialize the
+settings object. You can use <a class="link" href="NMRemoteSettings.html#nm-remote-settings-new-async" title="nm_remote_settings_new_async ()"><code class="function">nm_remote_settings_new_async()</code></a> if you
+want to avoid that.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>bus</code></em> :</span></p></td>
+<td>a valid and connected D-Bus connection. <span class="annotation">[<acronym title="NULL is ok, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>the new remote settings object on success, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> on failure</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="nm-remote-settings-new-async"></a><h3>nm_remote_settings_new_async ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                nm_remote_settings_new_async        (<em class="parameter"><code><span class="type">DBusGConnection</span> *bus</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>
+Creates a new object representing the remote settings service and
+begins asynchronously initializing it. <em class="parameter"><code>callback</code></em> will be called
+when it is done; use <a class="link" href="NMRemoteSettings.html#nm-remote-settings-new-finish" title="nm_remote_settings_new_finish ()"><code class="function">nm_remote_settings_new_finish()</code></a> to get the
+result.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>bus</code></em> :</span></p></td>
+<td>a valid and connected D-Bus connection. <span class="annotation">[<acronym title="NULL is ok, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>cancellable</code></em> :</span></p></td>
+<td>a <a href="http://library.gnome.org/devel/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>callback</code></em> :</span></p></td>
+<td>callback to call when the settings object is created</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>data for <em class="parameter"><code>callback</code></em>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="nm-remote-settings-new-finish"></a><h3>nm_remote_settings_new_finish ()</h3>
+<pre class="programlisting"><a class="link" href="NMRemoteSettings.html" title="NMRemoteSettings"><span class="returnvalue">NMRemoteSettings</span></a> *  nm_remote_settings_new_finish       (<em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<p>
+Gets the result of an <a class="link" href="NMRemoteSettings.html#nm-remote-settings-new-async" title="nm_remote_settings_new_async ()"><code class="function">nm_remote_settings_new_async()</code></a> call.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>result</code></em> :</span></p></td>
+<td>a <a href="http://library.gnome.org/devel/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
+<td>location for a <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a new <a class="link" href="NMRemoteSettings.html" title="NMRemoteSettings"><span class="type">NMRemoteSettings</span></a> object, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> on error</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="nm-remote-settings-save-hostname"></a><h3>nm_remote_settings_save_hostname ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            nm_remote_settings_save_hostname    (<em class="parameter"><code><a class="link" href="NMRemoteSettings.html" title="NMRemoteSettings"><span class="type">NMRemoteSettings</span></a> *settings</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">char</span> *hostname</code></em>,
+                                                         <em class="parameter"><code><a class="link" href="NMRemoteSettings.html#NMRemoteSettingsSaveHostnameFunc" title="NMRemoteSettingsSaveHostnameFunc ()"><span class="type">NMRemoteSettingsSaveHostnameFunc</span></a> callback</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+<p>
+Requests that the machine's persistent hostname be set to the specified value
+or cleared.
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>settings</code></em> :</span></p></td>
+<td>the <a class="link" href="NMRemoteSettings.html" title="NMRemoteSettings"><code class="literal">NMRemoteSettings</code></a>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>hostname</code></em> :</span></p></td>
+<td>the new persistent hostname to set, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to clear any existing
+persistent hostname</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>callback</code></em> :</span></p></td>
+<td>callback to be called when the
+hostname operation completes. <span class="annotation">[<acronym title="The callback is valid until first called."><span class="acronym">scope async</span></acronym>][<acronym title="NULL is ok, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>caller-specific data passed to <em class="parameter"><code>callback</code></em>. <span class="annotation">[<acronym title="This parameter is a 'user_data', for callbacks; many bindings can pass NULL here."><span class="acronym">closure</span></acronym>]</span>
+</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>TRUE if the request was successful, FALSE if it failed</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="refsect1">
+<a name="NMRemoteSettings.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="NMRemoteSettings--bus"></a><h3>The <code class="literal">"bus"</code> property</h3>
+<pre class="programlisting">  "bus"                      <span class="type">DBusGConnection</span>*      : Read / Write / Construct Only</pre>
+<p>DBusGConnection.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="NMRemoteSettings--can-modify"></a><h3>The <code class="literal">"can-modify"</code> property</h3>
+<pre class="programlisting">  "can-modify"               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read</pre>
+<p>Can modify anything (hostname, connections, etc).</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="NMRemoteSettings--hostname"></a><h3>The <code class="literal">"hostname"</code> property</h3>
+<pre class="programlisting">  "hostname"                 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read</pre>
+<p>Persistent hostname.</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="NMRemoteSettings--service-running"></a><h3>The <code class="literal">"service-running"</code> property</h3>
+<pre class="programlisting">  "service-running"          <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read</pre>
+<p>Is service running.</p>
+<p>Default value: FALSE</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="NMRemoteSettings.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="NMRemoteSettings-connections-read"></a><h3>The <code class="literal">"connections-read"</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="NMRemoteSettings.html" title="NMRemoteSettings"><span class="type">NMRemoteSettings</span></a> *nmremotesettings,
+                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>          user_data)             : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a></pre>
+<p>
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>nmremotesettings</code></em> :</span></p></td>
+<td>the object which received the signal.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="NMRemoteSettings-new-connection"></a><h3>The <code class="literal">"new-connection"</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="NMRemoteSettings.html" title="NMRemoteSettings"><span class="type">NMRemoteSettings</span></a> *nmremotesettings,
+                                                        <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject"><span class="type">GObject</span></a>          *arg1,
+                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>          user_data)             : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a></pre>
+<p>
+</p>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>nmremotesettings</code></em> :</span></p></td>
+<td>the object which received the signal.</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
+<td>user data set when the signal handler was connected.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>
+          Generated by GTK-Doc V1.18</div>
+</body>
+</html>

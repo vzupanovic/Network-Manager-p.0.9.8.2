@@ -1,0 +1,137 @@
+<!-- ##### SECTION Title ##### -->
+NMIP6Config
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT NMIP6Config ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG NMIP6Config:addresses ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG NMIP6Config:domains ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG NMIP6Config:nameservers ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG NMIP6Config:routes ##### -->
+<para>
+
+</para>
+
+<!-- ##### STRUCT NMIP6ConfigClass ##### -->
+<para>
+
+</para>
+
+@parent: 
+@_reserved1: 
+@_reserved2: 
+@_reserved3: 
+@_reserved4: 
+@_reserved5: 
+@_reserved6: 
+
+<!-- ##### MACRO NM_IP6_CONFIG_ADDRESSES ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO NM_IP6_CONFIG_DOMAINS ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO NM_IP6_CONFIG_NAMESERVERS ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO NM_IP6_CONFIG_ROUTES ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION nm_ip6_config_get_addresses ##### -->
+<para>
+
+</para>
+
+@config: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nm_ip6_config_get_domains ##### -->
+<para>
+
+</para>
+
+@config: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nm_ip6_config_get_nameservers ##### -->
+<para>
+
+</para>
+
+@config: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nm_ip6_config_get_routes ##### -->
+<para>
+
+</para>
+
+@config: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nm_ip6_config_new ##### -->
+<para>
+
+</para>
+
+@connection: 
+@object_path: 
+@Returns: 
+
+

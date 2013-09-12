@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
+<book xmlns="http://www.devhelp.net/book" title="NetworkManager D-Bus Reference Manual" link="index.html" author="" name="NetworkManager" version="2" language="c">
+  <chapters>
+    <sub name="D-Bus API Reference" link="ref-dbus.html"/>
+    <sub name="Network Configuration Setting Specification" link="ref-settings.html">
+      <sub name="Configuration Settings" link="ref-settings.html#idp2483776"/>
+      <sub name="Secret flag types" link="secrets-flags.html"/>
+    </sub>
+    <sub name="Migrating from NetworkManager 0.8 to NetworkManager 0.9" link="ref-migrating.html">
+      <sub name="Architecture and D-Bus API Changes in 0.9" link="ref-migrating.html#idp5648400">
+        <sub name="Elimination of the User Settings Service" link="ref-migrating.html#idp5822552"/>
+        <sub name="User Secret Agents" link="ref-migrating.html#idp5357608"/>
+        <sub name="Settings Service Interface Changes" link="ref-migrating.html#idp5812760"/>
+        <sub name="Connection Object Interface Changes" link="ref-migrating.html#idp4658248"/>
+        <sub name="Permissions Methods Consolidation" link="ref-migrating.html#idp3147688"/>
+        <sub name="AddConnection Returns Object Path of New Connection" link="ref-migrating.html#idp5075472"/>
+        <sub name="Support for WiMAX Devices" link="ref-migrating.html#idp5254248"/>
+        <sub name="New Device States" link="ref-migrating.html#idp5258016"/>
+        <sub name="New Active Connection State" link="ref-migrating.html#idp5259992"/>
+        <sub name="Consolidated Modem Devices" link="ref-migrating.html#idp1529928"/>
+        <sub name="Secret Property Flags" link="ref-migrating.html#idp1531928"/>
+        <sub name="Deprecated Methods Removed" link="ref-migrating.html#idp3380152"/>
+      </sub>
+    </sub>
+    <sub name="Index" link="ix01.html"/>
+    <sub name="License" link="license.html"/>
+  </chapters>
+  <functions/>
+</book>

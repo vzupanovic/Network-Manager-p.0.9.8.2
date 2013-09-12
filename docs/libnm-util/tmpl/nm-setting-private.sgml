@@ -1,0 +1,39 @@
+<!-- ##### SECTION Title ##### -->
+nm-setting-private
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO NM_SETTING_REGISTER_TYPE ##### -->
+<para>
+
+</para>
+
+@x: 
+
+
+<!-- ##### MACRO NM_SETTING_SECRET_FLAGS_ALL ##### -->
+<para>
+
+</para>
+
+
+

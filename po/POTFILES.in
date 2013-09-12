@@ -1,0 +1,38 @@
+[encoding: UTF-8]
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+cli/src/common.c
+cli/src/connections.c
+cli/src/devices.c
+cli/src/network-manager.c
+cli/src/nmcli.c
+cli/src/settings.c
+cli/src/utils.c
+libnm-util/crypto.c
+libnm-util/crypto_gnutls.c
+libnm-util/crypto_nss.c
+libnm-util/nm-utils.c
+policy/org.freedesktop.NetworkManager.policy.in.in
+src/main.c
+src/dhcp-manager/nm-dhcp-dhclient.c
+src/dhcp-manager/nm-dhcp-dhclient-utils.c
+src/dhcp-manager/nm-dhcp-manager.c
+src/dns-manager/nm-dns-manager.c
+src/logging/nm-logging.c
+src/modem-manager/nm-modem-cdma.c
+src/modem-manager/nm-modem-gsm.c
+src/modem-manager/nm-modem-broadband.c
+src/nm-device-bond.c
+src/nm-device-adsl.c
+src/nm-device-bridge.c
+src/nm-device-bt.c
+src/nm-device-ethernet.c
+src/nm-device-infiniband.c
+src/nm-device-olpc-mesh.c
+src/nm-device-vlan.c
+src/nm-manager.c
+src/nm-netlink-monitor.c
+src/settings/plugins/ifcfg-rh/reader.c
+src/settings/nm-settings-utils.c
+test/nm-online.c
+

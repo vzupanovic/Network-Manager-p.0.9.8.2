@@ -1,0 +1,221 @@
+<!-- ##### SECTION Title ##### -->
+NMActiveConnection
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT NMActiveConnection ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG NMActiveConnection:connection ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG NMActiveConnection:default ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG NMActiveConnection:default6 ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG NMActiveConnection:devices ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG NMActiveConnection:master ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG NMActiveConnection:specific-object ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG NMActiveConnection:state ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG NMActiveConnection:uuid ##### -->
+<para>
+
+</para>
+
+<!-- ##### STRUCT NMActiveConnectionClass ##### -->
+<para>
+
+</para>
+
+@parent: 
+@_reserved1: 
+@_reserved2: 
+@_reserved3: 
+@_reserved4: 
+@_reserved5: 
+@_reserved6: 
+
+<!-- ##### MACRO NM_ACTIVE_CONNECTION_CONNECTION ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO NM_ACTIVE_CONNECTION_DEFAULT ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO NM_ACTIVE_CONNECTION_DEFAULT6 ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO NM_ACTIVE_CONNECTION_DEVICES ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO NM_ACTIVE_CONNECTION_MASTER ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO NM_ACTIVE_CONNECTION_SPECIFIC_OBJECT ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO NM_ACTIVE_CONNECTION_STATE ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO NM_ACTIVE_CONNECTION_UUID ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### FUNCTION nm_active_connection_get_connection ##### -->
+<para>
+
+</para>
+
+@connection: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nm_active_connection_get_default ##### -->
+<para>
+
+</para>
+
+@connection: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nm_active_connection_get_default6 ##### -->
+<para>
+
+</para>
+
+@connection: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nm_active_connection_get_devices ##### -->
+<para>
+
+</para>
+
+@connection: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nm_active_connection_get_master ##### -->
+<para>
+
+</para>
+
+@connection: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nm_active_connection_get_specific_object ##### -->
+<para>
+
+</para>
+
+@connection: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nm_active_connection_get_state ##### -->
+<para>
+
+</para>
+
+@connection: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nm_active_connection_get_uuid ##### -->
+<para>
+
+</para>
+
+@connection: 
+@Returns: 
+
+
+<!-- ##### FUNCTION nm_active_connection_new ##### -->
+<para>
+
+</para>
+
+@connection: 
+@path: 
+@Returns: 
+
+

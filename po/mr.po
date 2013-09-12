@@ -1,0 +1,2846 @@
+# translation of NetworkManager.master.po to Marathi
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Sandeep Shedmake <sshedmak@redhat.com>, 2009.
+# Sandeep Shedmake <sshedmak@redhat.com>, 2010, 2011, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: NetworkManager.master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=NetworkManager&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-11-13 15:25+0000\n"
+"PO-Revision-Date: 2012-11-22 13:46+0530\n"
+"Last-Translator: Sandeep Shedmake <sshedmak@redhat.com>\n"
+"Language-Team: Marathi <maajhe-sanganak@freelists.org>\n"
+"Language: mr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: ../cli/src/common.c:32 ../cli/src/common.c:44 ../cli/src/common.c:52
+#: ../cli/src/common.c:63 ../cli/src/connections.c:128
+#: ../cli/src/connections.c:162
+msgid "GROUP"
+msgstr "GROUP"
+
+#. 0
+#: ../cli/src/common.c:33 ../cli/src/common.c:53
+msgid "ADDRESS"
+msgstr "ADDRESS"
+
+#. 1
+#: ../cli/src/common.c:34 ../cli/src/common.c:54
+msgid "ROUTE"
+msgstr "ROUTE"
+
+#. 2
+#: ../cli/src/common.c:35 ../cli/src/common.c:55
+msgid "DNS"
+msgstr "DNS"
+
+#. 3
+#: ../cli/src/common.c:36 ../cli/src/common.c:56
+msgid "DOMAIN"
+msgstr "DOMAIN"
+
+#. 4
+#: ../cli/src/common.c:37
+msgid "WINS"
+msgstr "WINS"
+
+#. 0
+#: ../cli/src/common.c:45 ../cli/src/common.c:64
+msgid "OPTION"
+msgstr "OPTION"
+
+#: ../cli/src/common.c:366
+msgid "unmanaged"
+msgstr "अव्यवस्थापीत"
+
+#: ../cli/src/common.c:368
+msgid "unavailable"
+msgstr "अनुपल्बध"
+
+#: ../cli/src/common.c:370 ../cli/src/network-manager.c:120
+msgid "disconnected"
+msgstr "खंडीत"
+
+#: ../cli/src/common.c:372
+msgid "connecting (prepare)"
+msgstr "जोडणी (तयार करत आहे)"
+
+#: ../cli/src/common.c:374
+msgid "connecting (configuring)"
+msgstr "जोडणी (संरचीत करत आहे)"
+
+#: ../cli/src/common.c:376
+msgid "connecting (need authentication)"
+msgstr "जोडणी (ओळख पटवणे आवश्यक आहे)"
+
+#: ../cli/src/common.c:378
+msgid "connecting (getting IP configuration)"
+msgstr "जोडणी (IP संरचना प्राप्त करत आहे)"
+
+#: ../cli/src/common.c:380
+msgid "connecting (checking IP connectivity)"
+msgstr "जोडणी करत आहे (IP जोडणी तपासत आहे)"
+
+#: ../cli/src/common.c:382
+msgid "connecting (starting secondary connections)"
+msgstr "जोडणी (दुसरी जोडणी सुरू करत आहे)"
+
+#: ../cli/src/common.c:384 ../cli/src/network-manager.c:116
+msgid "connected"
+msgstr "जोडणी यशस्वी"
+
+#: ../cli/src/common.c:386 ../cli/src/connections.c:635
+msgid "deactivating"
+msgstr "बंद करत आहे"
+
+#: ../cli/src/common.c:388
+msgid "connection failed"
+msgstr "जोडणी अपयशी"
+
+#: ../cli/src/common.c:390 ../cli/src/connections.c:638
+#: ../cli/src/connections.c:661 ../cli/src/connections.c:1353
+#: ../cli/src/devices.c:645 ../cli/src/network-manager.c:123
+#: ../cli/src/network-manager.c:185 ../cli/src/network-manager.c:188
+#: ../cli/src/network-manager.c:197 ../cli/src/network-manager.c:257
+#: ../cli/src/network-manager.c:273 ../cli/src/network-manager.c:431
+#: ../cli/src/network-manager.c:486 ../cli/src/network-manager.c:524
+#: ../cli/src/network-manager.c:563 ../cli/src/settings.c:593
+#: ../cli/src/settings.c:621 ../cli/src/utils.c:531 ../src/main.c:451
+#: ../src/main.c:470
+msgid "unknown"
+msgstr "अपरिचीत"
+
+#: ../cli/src/common.c:399
+msgid "No reason given"
+msgstr "कारण दिले नाही"
+
+#: ../cli/src/common.c:402
+msgid "Unknown error"
+msgstr "अपरिचीत त्रुटी"
+
+#: ../cli/src/common.c:405
+msgid "Device is now managed"
+msgstr "साधन आता व्यवस्थापीत आहे"
+
+#: ../cli/src/common.c:408
+msgid "Device is now unmanaged"
+msgstr "साधन आता व्यवस्थापन अशक्य आहे"
+
+#: ../cli/src/common.c:411
+msgid "The device could not be readied for configuration"
+msgstr "साधनाला संरचनाकरीता सज्ज करणे अशक्य"
+
+#: ../cli/src/common.c:414
+msgid ""
+"IP configuration could not be reserved (no available address, timeout, etc.)"
+msgstr "IP संरचना आरक्षित (पत्ता, वेळसमाप्ति, इत्यादि अनुपलब्ध) करणे अशक्य"
+
+#: ../cli/src/common.c:417
+msgid "The IP configuration is no longer valid"
+msgstr "IP संरचना यापुढे वैध नाही"
+
+#: ../cli/src/common.c:420
+msgid "Secrets were required, but not provided"
+msgstr "गोपनीयता आवश्यक, परंतु पुरवले नाही"
+
+#: ../cli/src/common.c:423
+msgid "802.1X supplicant disconnected"
+msgstr "802.1X सप्पिकंट खंडीत केले"
+
+#: ../cli/src/common.c:426
+msgid "802.1X supplicant configuration failed"
+msgstr "802.1X सप्लिकंट संरचना अपयशी"
+
+#: ../cli/src/common.c:429
+msgid "802.1X supplicant failed"
+msgstr "802.1X सप्लिकंट अपयशी"
+
+#: ../cli/src/common.c:432
+msgid "802.1X supplicant took too long to authenticate"
+msgstr "802.1X सप्लिकंटला ओळख पटवण्याकरीता जास्त वेळ लागला"
+
+#: ../cli/src/common.c:435
+msgid "PPP service failed to start"
+msgstr "PPP सर्व्हिस सुरू होण्यास अपयशी"
+
+#: ../cli/src/common.c:438
+msgid "PPP service disconnected"
+msgstr "PPP सर्व्हिस खंडीत"
+
+#: ../cli/src/common.c:441
+msgid "PPP failed"
+msgstr "PPP अपयशी"
+
+#: ../cli/src/common.c:444
+msgid "DHCP client failed to start"
+msgstr "DHCP क्लाएंट सुरू होण्यास अपयशी"
+
+#: ../cli/src/common.c:447
+msgid "DHCP client error"
+msgstr "DHCP क्लाएंट त्रुटी"
+
+#: ../cli/src/common.c:450
+msgid "DHCP client failed"
+msgstr "DHCP क्लाएंट अपयशी"
+
+#: ../cli/src/common.c:453
+msgid "Shared connection service failed to start"
+msgstr "शेअर्ड जोडणी सर्व्हिस सुरू होण्यास अपयशी"
+
+#: ../cli/src/common.c:456
+msgid "Shared connection service failed"
+msgstr "शेअर्ड जोडणी सर्व्हिस अपयशी"
+
+#: ../cli/src/common.c:459
+msgid "AutoIP service failed to start"
+msgstr "ऑटोIP सर्व्हिस सुरू होण्यास अपयशी"
+
+#: ../cli/src/common.c:462
+msgid "AutoIP service error"
+msgstr "ऑटोIP सर्व्हिस सुरू होण्यास अपयशी"
+
+#: ../cli/src/common.c:465
+msgid "AutoIP service failed"
+msgstr "ऑटोIP सर्व्हिस अपयशी"
+
+#: ../cli/src/common.c:468
+msgid "The line is busy"
+msgstr "लाइन व्यस्थ आहे"
+
+#: ../cli/src/common.c:471
+msgid "No dial tone"
+msgstr "डायल सूर आढळले नाही"
+
+#: ../cli/src/common.c:474
+msgid "No carrier could be established"
+msgstr "कॅरिअर स्थापित करणे अशक्य"
+
+#: ../cli/src/common.c:477
+msgid "The dialing request timed out"
+msgstr "डायलिंग विनंतीची वेळसमाप्ति"
+
+#: ../cli/src/common.c:480
+msgid "The dialing attempt failed"
+msgstr "डायलिंग प्रयत्न अपयशी"
+
+#: ../cli/src/common.c:483
+msgid "Modem initialization failed"
+msgstr "मोडेम प्रारंभिकरण अपयशी"
+
+#: ../cli/src/common.c:486
+msgid "Failed to select the specified APN"
+msgstr "निर्देशीत APN नीवडण्यास अपयशी"
+
+#: ../cli/src/common.c:489
+msgid "Not searching for networks"
+msgstr "नेटवर्ककरीता शोधत आहे"
+
+#: ../cli/src/common.c:492
+msgid "Network registration denied"
+msgstr "नेटवर्क नोंदणी नकारले"
+
+#: ../cli/src/common.c:495
+msgid "Network registration timed out"
+msgstr "नेटवर्क नोंदणीची वेळसमाप्ति"
+
+#: ../cli/src/common.c:498
+msgid "Failed to register with the requested network"
+msgstr "विनंती केलेल्या नेटवर्कसह नोंदणी अपयशी"
+
+#: ../cli/src/common.c:501
+msgid "PIN check failed"
+msgstr "PIN तपासणी अपयशी"
+
+#: ../cli/src/common.c:504
+msgid "Necessary firmware for the device may be missing"
+msgstr "साधनकरीता आवश्यक फर्मवेअर कदाचित आढळले नाही"
+
+#: ../cli/src/common.c:507
+msgid "The device was removed"
+msgstr "साधन काढून टाकले"
+
+#: ../cli/src/common.c:510
+msgid "NetworkManager went to sleep"
+msgstr "NetworkManager पूर्णपणे निष्क्रीय झाले"
+
+#: ../cli/src/common.c:513
+msgid "The device's active connection disappeared"
+msgstr "साधनाची सक्रिय जोडणी खंडीत झाली"
+
+#: ../cli/src/common.c:516
+msgid "Device disconnected by user or client"
+msgstr "वापरकर्ता किंवा क्लाएंटतर्फे साधन खंडीत केले"
+
+#: ../cli/src/common.c:519
+msgid "Carrier/link changed"
+msgstr "कॅरिअर किंवा दुवा बदलले"
+
+#: ../cli/src/common.c:522
+msgid "The device's existing connection was assumed"
+msgstr "साधनाची अस्तित्वातील जोडणी गृहीत धरले"
+
+#: ../cli/src/common.c:525
+msgid "The supplicant is now available"
+msgstr "सप्लिकंट आता उपलब्ध आहे"
+
+#: ../cli/src/common.c:528
+msgid "The modem could not be found"
+msgstr "मोडेम आढळले नाही"
+
+#: ../cli/src/common.c:531
+msgid "The Bluetooth connection failed or timed out"
+msgstr "ब्ल्युटूथ जोडणी अपयशी किंवा वेळ समाप्ति आढळली"
+
+#: ../cli/src/common.c:534
+msgid "GSM Modem's SIM card not inserted"
+msgstr "GSM मोडेमचे SIM कार्ड अंतर्भुत केले नाही"
+
+#: ../cli/src/common.c:537
+msgid "GSM Modem's SIM PIN required"
+msgstr "GSM मोडेमचे SIM PIN आवश्यक"
+
+#: ../cli/src/common.c:540
+msgid "GSM Modem's SIM PUK required"
+msgstr "GSM मोडेमचे SIM PUK आवश्यक"
+
+#: ../cli/src/common.c:543
+msgid "GSM Modem's SIM wrong"
+msgstr "GSM मोडेमचे SIM चुकिचे"
+
+#: ../cli/src/common.c:546
+msgid "InfiniBand device does not support connected mode"
+msgstr "इंफिनिबँड साधन जोडणी मोडकरीता समर्थन पुरवत नाही"
+
+#: ../cli/src/common.c:549
+msgid "A dependency of the connection failed"
+msgstr "जोडणीचे अवलंबन अपयशी"
+
+#: ../cli/src/common.c:552
+msgid "A problem with the RFC 2684 Ethernet over ADSL bridge"
+msgstr "RFC 2684 इथरनेट ओव्हर ADSL ब्रिजसह अडचण"
+
+#: ../cli/src/common.c:555
+msgid "ModemManager is unavailable"
+msgstr "ModemManager अनुपलब्ध"
+
+#: ../cli/src/common.c:558
+msgid "The Wi-Fi network could not be found"
+msgstr "Wi-Fi नेटवर्क आढळले नाही"
+
+#: ../cli/src/common.c:561
+#| msgid "A seconadary connection of the base connection failed"
+msgid "A secondary connection of the base connection failed"
+msgstr "बेस जोडणीचे सेकंडरि जोड अपयशी"
+
+#: ../cli/src/common.c:564 ../cli/src/devices.c:295 ../cli/src/devices.c:311
+#: ../cli/src/devices.c:433 ../cli/src/devices.c:477
+msgid "Unknown"
+msgstr "अपरिचीत"
+
+#. 0
+#. used only for 'GENERAL' group listing
+#: ../cli/src/connections.c:59 ../cli/src/connections.c:129
+#: ../cli/src/devices.c:107 ../cli/src/devices.c:131 ../cli/src/devices.c:141
+#: ../cli/src/devices.c:151 ../cli/src/devices.c:165 ../cli/src/devices.c:179
+#: ../cli/src/devices.c:201 ../cli/src/devices.c:217 ../cli/src/devices.c:226
+msgid "NAME"
+msgstr "NAME"
+
+#. 0
+#. 1
+#: ../cli/src/connections.c:60 ../cli/src/connections.c:130
+msgid "UUID"
+msgstr "UUID"
+
+#. 1
+#. 0
+#. 1
+#. 2
+#: ../cli/src/connections.c:61 ../cli/src/connections.c:163
+#: ../cli/src/devices.c:71 ../cli/src/devices.c:109 ../cli/src/devices.c:204
+msgid "TYPE"
+msgstr "TYPE"
+
+#. 2
+#: ../cli/src/connections.c:62
+msgid "TIMESTAMP"
+msgstr "TIMESTAMP"
+
+#. 3
+#: ../cli/src/connections.c:63
+msgid "TIMESTAMP-REAL"
+msgstr "TIMESTAMP-REAL"
+
+#. 4
+#. 13
+#: ../cli/src/connections.c:64 ../cli/src/devices.c:121
+msgid "AUTOCONNECT"
+msgstr "AUTOCONNECT"
+
+#. 5
+#: ../cli/src/connections.c:65
+msgid "READONLY"
+msgstr "READONLY"
+
+#. 6
+#. 8
+#. 2
+#. 11
+#. 5
+#: ../cli/src/connections.c:66 ../cli/src/connections.c:137
+#: ../cli/src/devices.c:73 ../cli/src/devices.c:191 ../cli/src/devices.c:207
+msgid "DBUS-PATH"
+msgstr "DBUS-PATH"
+
+#. 2
+#: ../cli/src/connections.c:131
+msgid "DEVICES"
+msgstr "DEVICES"
+
+#. 3
+#. 1
+#. 8
+#. 1
+#: ../cli/src/connections.c:132 ../cli/src/devices.c:72
+#: ../cli/src/devices.c:116 ../cli/src/network-manager.c:39
+msgid "STATE"
+msgstr "STATE"
+
+#. 4
+#: ../cli/src/connections.c:133
+msgid "DEFAULT"
+msgstr "DEFAULT"
+
+#. 5
+#: ../cli/src/connections.c:134
+msgid "DEFAULT6"
+msgstr "DEFAULT6"
+
+#. 6
+#: ../cli/src/connections.c:135
+msgid "SPEC-OBJECT"
+msgstr "SPEC-OBJECT"
+
+#. 7
+#. 1
+#: ../cli/src/connections.c:136 ../cli/src/connections.c:150
+msgid "VPN"
+msgstr "VPN"
+
+#. 9
+#: ../cli/src/connections.c:138
+msgid "CON-PATH"
+msgstr "CON-PATH"
+
+#. 10
+#: ../cli/src/connections.c:139
+msgid "ZONE"
+msgstr "ZONE"
+
+#. 11
+#: ../cli/src/connections.c:140
+msgid "MASTER-PATH"
+msgstr "MASTER-PATH"
+
+#: ../cli/src/connections.c:148 ../cli/src/devices.c:82
+msgid "GENERAL"
+msgstr "GENERAL"
+
+#. 0
+#: ../cli/src/connections.c:149
+msgid "IP"
+msgstr "IP"
+
+#. 1
+#: ../cli/src/connections.c:164
+msgid "USERNAME"
+msgstr "USERNAME"
+
+#. 2
+#: ../cli/src/connections.c:165
+msgid "GATEWAY"
+msgstr "GATEWAY"
+
+#. 3
+#: ../cli/src/connections.c:166
+msgid "BANNER"
+msgstr "BANNER"
+
+#. 4
+#: ../cli/src/connections.c:167
+msgid "VPN-STATE"
+msgstr "VPN-STATE"
+
+#. 5
+#: ../cli/src/connections.c:168
+msgid "CFG"
+msgstr "CFG"
+
+#: ../cli/src/connections.c:190
+#, c-format
+#| msgid ""
+#| "Usage: nmcli con { COMMAND | help }\n"
+#| "  COMMAND := { list | status | up | down | delete }\n"
+#| "\n"
+#| "  list [id <id> | uuid <id>]\n"
+#| "  status [id <id> | uuid <id> | path <path>]\n"
+#| "  up id <id> | uuid <id> [iface <iface>] [ap <BSSID>] [nsp <name>] [--"
+#| "nowait] [--timeout <timeout>]\n"
+#| "  up id <id> | uuid <id> [iface <iface>] [ap <BSSID>] [--nowait] [--"
+#| "timeout <timeout>]\n"
+#| "  down id <id> | uuid <id>\n"
+#| "  delete id <id> | uuid <id>\n"
+msgid ""
+"Usage: nmcli connection { COMMAND | help }\n"
+"  COMMAND := { list | status | up | down | delete }\n"
+"\n"
+"  list [id <id> | uuid <id>]\n"
+"  status [id <id> | uuid <id> | path <path>]\n"
+"  up id <id> | uuid <id> [iface <iface>] [ap <BSSID>] [nsp <name>] [--"
+"nowait] [--timeout <timeout>]\n"
+"  up id <id> | uuid <id> [iface <iface>] [ap <BSSID>] [--nowait] [--timeout "
+"<timeout>]\n"
+"  down id <id> | uuid <id>\n"
+"  delete id <id> | uuid <id>\n"
+"\n"
+msgstr ""
+"वापर: nmcli connection { COMMAND | help }\n"
+"  COMMAND := { list | status | up | down | delete }\n"
+"\n"
+"  list [id <id> | uuid <id>]\n"
+"  status [id <id> | uuid <id> | path <path>]\n"
+"  up id <id> | uuid <id> [iface <iface>] [ap <BSSID>] [nsp <name>] [--"
+"nowait] [--timeout <timeout>]\n"
+"  up id <id> | uuid <id> [iface <iface>] [ap <BSSID>] [--nowait] [--timeout "
+"<timeout>]\n"
+"  down id <id> | uuid <id>\n"
+"  delete id <id> | uuid <id>\n"
+"\n"
+
+#: ../cli/src/connections.c:251 ../cli/src/connections.c:611
+#, c-format
+msgid "Error: 'con list': %s"
+msgstr "त्रुटी: 'con list': %s"
+
+#: ../cli/src/connections.c:253 ../cli/src/connections.c:613
+#, c-format
+msgid "Error: 'con list': %s; allowed fields: %s"
+msgstr "त्रुटी: 'con list': %s; स्वीकार्य क्षेत्र: %s"
+
+#: ../cli/src/connections.c:261
+msgid "Connection details"
+msgstr "जोडणीचे तपशील"
+
+#: ../cli/src/connections.c:486
+msgid "never"
+msgstr "कधिच नाही"
+
+#. "CAPABILITIES"
+#. Print header
+#. "WIFI-PROPERTIES"
+#: ../cli/src/connections.c:487 ../cli/src/connections.c:488
+#: ../cli/src/connections.c:716 ../cli/src/connections.c:717
+#: ../cli/src/connections.c:719 ../cli/src/devices.c:441
+#: ../cli/src/devices.c:494 ../cli/src/devices.c:610 ../cli/src/devices.c:611
+#: ../cli/src/devices.c:612 ../cli/src/devices.c:644 ../cli/src/devices.c:671
+#: ../cli/src/devices.c:672 ../cli/src/devices.c:673 ../cli/src/devices.c:674
+#: ../cli/src/devices.c:675 ../cli/src/network-manager.c:267
+#: ../cli/src/settings.c:712 ../cli/src/settings.c:787
+#: ../cli/src/settings.c:907 ../cli/src/settings.c:1189
+#: ../cli/src/settings.c:1190 ../cli/src/settings.c:1192
+#: ../cli/src/settings.c:1194 ../cli/src/settings.c:1195
+#: ../cli/src/settings.c:1326 ../cli/src/settings.c:1327
+#: ../cli/src/settings.c:1328 ../cli/src/settings.c:1329
+#: ../cli/src/settings.c:1406 ../cli/src/settings.c:1407
+#: ../cli/src/settings.c:1408 ../cli/src/settings.c:1409
+#: ../cli/src/settings.c:1410 ../cli/src/settings.c:1411
+#: ../cli/src/settings.c:1412 ../cli/src/settings.c:1413
+#: ../cli/src/settings.c:1414 ../cli/src/settings.c:1415
+#: ../cli/src/settings.c:1416 ../cli/src/settings.c:1417
+#: ../cli/src/settings.c:1418 ../cli/src/settings.c:1489
+msgid "yes"
+msgstr "होय"
+
+#: ../cli/src/connections.c:487 ../cli/src/connections.c:488
+#: ../cli/src/connections.c:716 ../cli/src/connections.c:717
+#: ../cli/src/connections.c:719 ../cli/src/devices.c:441
+#: ../cli/src/devices.c:494 ../cli/src/devices.c:610 ../cli/src/devices.c:611
+#: ../cli/src/devices.c:612 ../cli/src/devices.c:644 ../cli/src/devices.c:671
+#: ../cli/src/devices.c:672 ../cli/src/devices.c:673 ../cli/src/devices.c:674
+#: ../cli/src/devices.c:675 ../cli/src/network-manager.c:269
+#: ../cli/src/settings.c:712 ../cli/src/settings.c:714
+#: ../cli/src/settings.c:787 ../cli/src/settings.c:907
+#: ../cli/src/settings.c:1189 ../cli/src/settings.c:1190
+#: ../cli/src/settings.c:1192 ../cli/src/settings.c:1194
+#: ../cli/src/settings.c:1195 ../cli/src/settings.c:1326
+#: ../cli/src/settings.c:1327 ../cli/src/settings.c:1328
+#: ../cli/src/settings.c:1329 ../cli/src/settings.c:1406
+#: ../cli/src/settings.c:1407 ../cli/src/settings.c:1408
+#: ../cli/src/settings.c:1409 ../cli/src/settings.c:1410
+#: ../cli/src/settings.c:1411 ../cli/src/settings.c:1412
+#: ../cli/src/settings.c:1413 ../cli/src/settings.c:1414
+#: ../cli/src/settings.c:1415 ../cli/src/settings.c:1416
+#: ../cli/src/settings.c:1417 ../cli/src/settings.c:1418
+#: ../cli/src/settings.c:1489
+msgid "no"
+msgstr "नाही"
+
+#: ../cli/src/connections.c:562
+msgid "Connection list"
+msgstr "जोडणी सूची"
+
+#: ../cli/src/connections.c:575 ../cli/src/connections.c:1112
+#: ../cli/src/connections.c:1650 ../cli/src/connections.c:1665
+#: ../cli/src/connections.c:1674 ../cli/src/connections.c:1684
+#: ../cli/src/connections.c:1696 ../cli/src/connections.c:1804
+#: ../cli/src/connections.c:1906 ../cli/src/devices.c:1122
+#: ../cli/src/devices.c:1132 ../cli/src/devices.c:1250
+#: ../cli/src/devices.c:1258 ../cli/src/devices.c:1622
+#: ../cli/src/devices.c:1629 ../cli/src/devices.c:1643
+#: ../cli/src/devices.c:1650 ../cli/src/devices.c:1667
+#: ../cli/src/devices.c:1678 ../cli/src/devices.c:1899
+#: ../cli/src/devices.c:1906
+#, c-format
+msgid "Error: %s argument is missing."
+msgstr "त्रुटी: %s घटक आढळले नाही."
+
+#: ../cli/src/connections.c:588
+#, c-format
+msgid "Error: %s - no such connection."
+msgstr "त्रुटी: %s - याप्रकारची जोडणी आढळली नाही."
+
+#: ../cli/src/connections.c:594 ../cli/src/connections.c:1709
+#: ../cli/src/connections.c:1821 ../cli/src/connections.c:1913
+#: ../cli/src/devices.c:906 ../cli/src/devices.c:986 ../cli/src/devices.c:1146
+#: ../cli/src/devices.c:1264 ../cli/src/devices.c:1691
+#: ../cli/src/devices.c:1912
+#, c-format
+msgid "Unknown parameter: %s\n"
+msgstr "अपरिचीत घटक: %s\n"
+
+#: ../cli/src/connections.c:603
+#, c-format
+msgid "Error: no valid parameter specified."
+msgstr "त्रुटी: वैध घटक निर्देशीत नाही."
+
+#: ../cli/src/connections.c:618 ../cli/src/connections.c:2009
+#: ../cli/src/devices.c:2123 ../cli/src/network-manager.c:599
+#, c-format
+msgid "Error: %s."
+msgstr "त्रुटी: %s."
+
+#: ../cli/src/connections.c:631
+msgid "activating"
+msgstr "बंद करत आहे"
+
+#: ../cli/src/connections.c:633
+msgid "activated"
+msgstr "सक्रिय केले"
+
+#: ../cli/src/connections.c:647
+msgid "VPN connecting (prepare)"
+msgstr "VPN जोडणी (तयार करा)"
+
+#: ../cli/src/connections.c:649
+msgid "VPN connecting (need authentication)"
+msgstr "VPN जोडणी (ओळख पटवणे आवश्यक आहे)"
+
+#: ../cli/src/connections.c:651
+msgid "VPN connecting"
+msgstr "VPN जोडणी"
+
+#: ../cli/src/connections.c:653
+msgid "VPN connecting (getting IP configuration)"
+msgstr "VPN जोडणी (IP संरचना प्राप्त करत आहे)"
+
+#: ../cli/src/connections.c:655
+msgid "VPN connected"
+msgstr "VPN जोडणी यशस्वी"
+
+#: ../cli/src/connections.c:657
+msgid "VPN connection failed"
+msgstr "VPN जोडणी अपयशी"
+
+#: ../cli/src/connections.c:659
+msgid "VPN disconnected"
+msgstr "VPN जोडणी खंडीत झाली"
+
+#: ../cli/src/connections.c:712 ../cli/src/connections.c:722
+msgid "N/A"
+msgstr "N/A"
+
+#: ../cli/src/connections.c:916 ../cli/src/connections.c:1140
+#, c-format
+msgid "Error: 'con status': %s"
+msgstr "त्रुटी: 'con status': %s"
+
+#: ../cli/src/connections.c:918 ../cli/src/connections.c:1142
+#, c-format
+msgid "Error: 'con status': %s; allowed fields: %s"
+msgstr "त्रुटी: 'con status': %s; स्वीकार्य क्षेत्र: %s"
+
+#: ../cli/src/connections.c:926
+msgid "Active connection details"
+msgstr "सक्रीय जोडणीचे तपशील"
+
+#: ../cli/src/connections.c:1062 ../cli/src/connections.c:1724
+#: ../cli/src/connections.c:1836 ../cli/src/connections.c:1927
+#: ../cli/src/devices.c:933 ../cli/src/devices.c:995 ../cli/src/devices.c:1161
+#: ../cli/src/devices.c:1294 ../cli/src/devices.c:1713
+#: ../cli/src/devices.c:1941 ../cli/src/network-manager.c:311
+#, c-format
+msgid "Error: Can't find out if NetworkManager is running: %s."
+msgstr "त्रुटी: NetworkManager कार्यरत आहे, हे शोधणे अशक्य: %s."
+
+#: ../cli/src/connections.c:1066 ../cli/src/connections.c:1728
+#: ../cli/src/connections.c:1840 ../cli/src/connections.c:1931
+#: ../cli/src/devices.c:937 ../cli/src/devices.c:999 ../cli/src/devices.c:1165
+#: ../cli/src/devices.c:1298 ../cli/src/devices.c:1717
+#: ../cli/src/devices.c:1945 ../cli/src/network-manager.c:315
+#, c-format
+msgid "Error: NetworkManager is not running."
+msgstr "त्रुटी: NetworkManager कार्यरत नाही."
+
+#: ../cli/src/connections.c:1098
+msgid "Active connections"
+msgstr "सक्रिय जोडणी"
+
+#: ../cli/src/connections.c:1123
+#, c-format
+msgid "Error: '%s' is not an active connection."
+msgstr "त्रुटी: '%s' सक्रीय जोडणी नाही."
+
+#: ../cli/src/connections.c:1128
+#, c-format
+msgid "Error: unknown parameter: %s"
+msgstr "त्रुटी: अपरिचीत घटक: %s"
+
+#: ../cli/src/connections.c:1235
+#, c-format
+msgid "no active connection on device '%s'"
+msgstr "साधन '%s' वरील सक्रिय जोडणी आढळली नाही"
+
+#: ../cli/src/connections.c:1243
+msgid "no active connection or device"
+msgstr "सक्रिय जोडणी किंवा साधन आढळले नाही"
+
+#: ../cli/src/connections.c:1314
+#, c-format
+msgid "device '%s' not compatible with connection '%s'"
+msgstr "साधन '%s' जोडणी '%s' सह सहत्व नाही"
+
+#: ../cli/src/connections.c:1317
+#, c-format
+msgid "no device found for connection '%s'"
+msgstr "जोडणी '%s' करीता साधन आढळले नाही"
+
+#: ../cli/src/connections.c:1329
+msgid "unknown reason"
+msgstr "अपरिचीत कारण"
+
+#: ../cli/src/connections.c:1331
+msgid "none"
+msgstr "काहिच नाही"
+
+#: ../cli/src/connections.c:1333
+msgid "the user was disconnected"
+msgstr "वापरकर्ता खंडीत झाले"
+
+#: ../cli/src/connections.c:1335
+msgid "the base network connection was interrupted"
+msgstr "बेस नेटवर्क जोडणी खंडीत झाले"
+
+#: ../cli/src/connections.c:1337
+msgid "the VPN service stopped unexpectedly"
+msgstr "VPN सेवा अनपेक्षीतरित्या थांबली"
+
+#: ../cli/src/connections.c:1339
+msgid "the VPN service returned invalid configuration"
+msgstr "VPN सेवाने अवैध संरचना रिटर्न केली"
+
+#: ../cli/src/connections.c:1341
+msgid "the connection attempt timed out"
+msgstr "जोडणी प्रयत्नाची वेळ समाप्ती आढळली"
+
+#: ../cli/src/connections.c:1343
+msgid "the VPN service did not start in time"
+msgstr "VPN सेवा वेळेवर सुरू झाली नाही"
+
+#: ../cli/src/connections.c:1345
+msgid "the VPN service failed to start"
+msgstr "VPN सेवा सुरू होण्यास अपयशी"
+
+#: ../cli/src/connections.c:1347
+msgid "no valid VPN secrets"
+msgstr "वैध VPN गोपणीयता आढळले नाही"
+
+#: ../cli/src/connections.c:1349
+msgid "invalid VPN secrets"
+msgstr "अवैध VPN गोपणीयता"
+
+#: ../cli/src/connections.c:1351
+msgid "the connection was removed"
+msgstr "जोडणी काढून टाकली"
+
+#: ../cli/src/connections.c:1368 ../cli/src/connections.c:1573
+#, c-format
+msgid "Connection successfully activated (D-Bus active path: %s)\n"
+msgstr "जोडणी यशस्वीरित्या सुरू केले (D-Bus सक्रिय मार्ग: %s)\n"
+
+#. Active connection failed and dissapeared, quit.
+#: ../cli/src/connections.c:1373 ../cli/src/connections.c:1474
+#, c-format
+msgid "Error: Connection activation failed."
+msgstr "त्रुटी: जोडणी सक्रिय करण्यास अपयशी."
+
+#: ../cli/src/connections.c:1398
+#, c-format
+msgid "VPN connection successfully activated (D-Bus active path: %s)\n"
+msgstr "VPN जोडणी यशस्वीरित्या सुरू केले (D-Bus सक्रिय मार्ग: %s)\n"
+
+#: ../cli/src/connections.c:1406
+#, c-format
+msgid "Error: Connection activation failed: %s."
+msgstr "त्रुटी: जोडणी सक्रिय करण्यास अपयशी: %s."
+
+#: ../cli/src/connections.c:1503 ../cli/src/devices.c:1055
+#, c-format
+msgid "Error: Timeout %d sec expired."
+msgstr "त्रुटी: वेळसमाप्ती %d सेकंद समाप्त."
+
+#: ../cli/src/connections.c:1564
+#, c-format
+msgid "Error: Connection activation failed: %s"
+msgstr "त्रुटी: जोडणी सक्रिय करण्यास अपयशी: %s"
+
+#: ../cli/src/connections.c:1658 ../cli/src/connections.c:1812
+#: ../cli/src/connections.c:1940
+#, c-format
+msgid "Error: Unknown connection: %s."
+msgstr "त्रुटी: अपरिचीत जोडणी: %s."
+
+#: ../cli/src/connections.c:1704 ../cli/src/devices.c:1140
+#: ../cli/src/devices.c:1686
+#, c-format
+msgid "Error: timeout value '%s' is not valid."
+msgstr "त्रुटी: वेळसमाप्तीचे मुल्य '%s' वैध नाही."
+
+#: ../cli/src/connections.c:1717 ../cli/src/connections.c:1829
+#: ../cli/src/connections.c:1920
+#, c-format
+msgid "Error: id or uuid has to be specified."
+msgstr "त्रुटी: id किंवा uuid निर्देशीत करणे आवश्यक आहे."
+
+#: ../cli/src/connections.c:1749
+#, c-format
+msgid "Error: No suitable device found: %s."
+msgstr "त्रुटी: योग्य साधन आढळले नाही: %s."
+
+#: ../cli/src/connections.c:1751
+#, c-format
+msgid "Error: No suitable device found."
+msgstr "त्रुटी: योग्य साधन आढळले नाही."
+
+#: ../cli/src/connections.c:1865
+#, c-format
+msgid "Warning: Connection not active\n"
+msgstr "सावधान: जोडणी सक्रिय नाही\n"
+
+#: ../cli/src/connections.c:1879
+#, c-format
+msgid "Error: Connection deletion failed: %s"
+msgstr "त्रुटी: जोडणी नष्ट करणे अपयशी: %s"
+
+#: ../cli/src/connections.c:2000
+#, c-format
+msgid "Error: 'con' command '%s' is not valid."
+msgstr "त्रुटी: 'con' आदेश '%s' वैध नाही."
+
+#: ../cli/src/connections.c:2068
+#, c-format
+msgid "Error: could not connect to D-Bus."
+msgstr "त्रुटी: D-Bus सह जोडणी करणे अशक्य."
+
+#: ../cli/src/connections.c:2076
+#, c-format
+msgid "Error: Could not get system settings."
+msgstr "त्रुटी: प्रणालीची संयोजना प्राप्त करणे अशक्य."
+
+#: ../cli/src/connections.c:2086
+#, c-format
+msgid "Error: Can't obtain connections: settings service is not running."
+msgstr "त्रुटी: जोडणी प्राप्त करण्यास अशक्य: सेटिंग्स् सर्व्हिस कार्यरत नाही."
+
+#. 0
+#. 9
+#. 3
+#: ../cli/src/devices.c:70 ../cli/src/devices.c:108 ../cli/src/devices.c:189
+#: ../cli/src/devices.c:205
+msgid "DEVICE"
+msgstr "DEVICE"
+
+#. 0
+#: ../cli/src/devices.c:83
+msgid "CAPABILITIES"
+msgstr "CAPABILITIES"
+
+#. 1
+#: ../cli/src/devices.c:84
+msgid "WIFI-PROPERTIES"
+msgstr "WIFI-PROPERTIES"
+
+#. 2
+#: ../cli/src/devices.c:85
+msgid "AP"
+msgstr "AP"
+
+#. 3
+#: ../cli/src/devices.c:86
+msgid "WIRED-PROPERTIES"
+msgstr "WIRED-PROPERTIES"
+
+#. 4
+#: ../cli/src/devices.c:87
+msgid "WIMAX-PROPERTIES"
+msgstr "WIMAX-PROPERTIES"
+
+#. 5
+#. 0
+#: ../cli/src/devices.c:88 ../cli/src/devices.c:202
+msgid "NSP"
+msgstr "NSP"
+
+#. 6
+#: ../cli/src/devices.c:89
+msgid "IP4"
+msgstr "IP4"
+
+#. 7
+#: ../cli/src/devices.c:90
+msgid "DHCP4"
+msgstr "DHCP4"
+
+#. 8
+#: ../cli/src/devices.c:91
+msgid "IP6"
+msgstr "IP6"
+
+#. 9
+#: ../cli/src/devices.c:92
+msgid "DHCP6"
+msgstr "DHCP6"
+
+#. 10
+#: ../cli/src/devices.c:93
+msgid "BOND"
+msgstr "BOND"
+
+#. 11
+#: ../cli/src/devices.c:94
+msgid "VLAN"
+msgstr "VLAN"
+
+#. 2
+#: ../cli/src/devices.c:110
+msgid "VENDOR"
+msgstr "VENDOR"
+
+#. 3
+#: ../cli/src/devices.c:111
+msgid "PRODUCT"
+msgstr "PRODUCT"
+
+#. 4
+#: ../cli/src/devices.c:112
+msgid "DRIVER"
+msgstr "DRIVER"
+
+#. 5
+#: ../cli/src/devices.c:113
+msgid "DRIVER-VERSION"
+msgstr "DRIVER-VERSION"
+
+#. 6
+#: ../cli/src/devices.c:114
+msgid "FIRMWARE-VERSION"
+msgstr "FIRMWARE-VERSION"
+
+#. 7
+#: ../cli/src/devices.c:115
+msgid "HWADDR"
+msgstr "HWADDR"
+
+#. 9
+#: ../cli/src/devices.c:117
+msgid "REASON"
+msgstr "REASON"
+
+#. 10
+#: ../cli/src/devices.c:118
+msgid "UDI"
+msgstr "UDI"
+
+#. 11
+#: ../cli/src/devices.c:119
+msgid "IP-IFACE"
+msgstr "IP-IFACE"
+
+#. 12
+#: ../cli/src/devices.c:120
+msgid "NM-MANAGED"
+msgstr "NM-MANAGED"
+
+#. 14
+#: ../cli/src/devices.c:122
+msgid "FIRMWARE-MISSING"
+msgstr "FIRMWARE-MISSING"
+
+#. 15
+#: ../cli/src/devices.c:123
+msgid "CONNECTION"
+msgstr "CONNECTION"
+
+#. 0
+#: ../cli/src/devices.c:132
+msgid "CARRIER-DETECT"
+msgstr "CARRIER-DETECT"
+
+#. 1
+#: ../cli/src/devices.c:133
+msgid "SPEED"
+msgstr "SPEED"
+
+#. 0
+#: ../cli/src/devices.c:142
+msgid "CARRIER"
+msgstr "CARRIER"
+
+#. 0
+#: ../cli/src/devices.c:152
+msgid "WEP"
+msgstr "WEP"
+
+#. 1
+#: ../cli/src/devices.c:153
+msgid "WPA"
+msgstr "WPA"
+
+#. 2
+#: ../cli/src/devices.c:154
+msgid "WPA2"
+msgstr "WPA2"
+
+#. 3
+#: ../cli/src/devices.c:155
+msgid "TKIP"
+msgstr "TKIP"
+
+#. 4
+#: ../cli/src/devices.c:156
+msgid "CCMP"
+msgstr "CCMP"
+
+#. 0
+#: ../cli/src/devices.c:166
+msgid "CTR-FREQ"
+msgstr "CTR-FREQ"
+
+#. 1
+#: ../cli/src/devices.c:167
+msgid "RSSI"
+msgstr "RSSI"
+
+#. 2
+#: ../cli/src/devices.c:168
+msgid "CINR"
+msgstr "CINR"
+
+#. 3
+#: ../cli/src/devices.c:169
+msgid "TX-POW"
+msgstr "TX-POW"
+
+#. 4
+#: ../cli/src/devices.c:170
+msgid "BSID"
+msgstr "BSID"
+
+#. 0
+#: ../cli/src/devices.c:180
+msgid "SSID"
+msgstr "SSID"
+
+#. 1
+#: ../cli/src/devices.c:181
+msgid "BSSID"
+msgstr "BSSID"
+
+#. 2
+#: ../cli/src/devices.c:182
+msgid "MODE"
+msgstr "MODE"
+
+#. 3
+#: ../cli/src/devices.c:183
+msgid "FREQ"
+msgstr "FREQ"
+
+#. 4
+#: ../cli/src/devices.c:184
+msgid "RATE"
+msgstr "RATE"
+
+#. 5
+#. 1
+#: ../cli/src/devices.c:185 ../cli/src/devices.c:203
+msgid "SIGNAL"
+msgstr "SIGNAL"
+
+#. 6
+#: ../cli/src/devices.c:186
+msgid "SECURITY"
+msgstr "SECURITY"
+
+#. 7
+#: ../cli/src/devices.c:187
+msgid "WPA-FLAGS"
+msgstr "WPA-FLAGS"
+
+#. 8
+#: ../cli/src/devices.c:188
+msgid "RSN-FLAGS"
+msgstr "RSN-FLAGS"
+
+#. 10
+#. 4
+#: ../cli/src/devices.c:190 ../cli/src/devices.c:206
+msgid "ACTIVE"
+msgstr "ACTIVE"
+
+#. 0
+#: ../cli/src/devices.c:218
+msgid "SLAVES"
+msgstr "SLAVES"
+
+#. 0
+#: ../cli/src/devices.c:227
+msgid "ID"
+msgstr "ID"
+
+#: ../cli/src/devices.c:243
+#, c-format
+#| msgid ""
+#| "Usage: nmcli dev { COMMAND | help }\n"
+#| "\n"
+#| "  COMMAND := { status | list | disconnect | wifi | wimax }\n"
+#| "\n"
+#| "  COMMAND := { status | list | disconnect | wifi }\n"
+#| "\n"
+#| "  status\n"
+#| "  list [iface <iface>]\n"
+#| "  disconnect iface <iface> [--nowait] [--timeout <timeout>]\n"
+#| "  wifi [list [iface <iface>] [bssid <BSSID>]]\n"
+#| "  wifi connect <(B)SSID> [password <password>] [wep-key-type key|phrase] "
+#| "[iface <iface>] [bssid <BSSID>] [name <name>]\n"
+#| "               [--private] [--nowait] [--timeout <timeout>]\n"
+#| "  wimax [list [iface <iface>] [nsp <name>]]\n"
+#| "\n"
+msgid ""
+"Usage: nmcli device { COMMAND | help }\n"
+"\n"
+"  COMMAND := { status | list | disconnect | wifi | wimax }\n"
+"\n"
+"  COMMAND := { status | list | disconnect | wifi }\n"
+"\n"
+"  status\n"
+"  list [iface <iface>]\n"
+"  disconnect iface <iface> [--nowait] [--timeout <timeout>]\n"
+"  wifi [list [iface <iface>] [bssid <BSSID>]]\n"
+"  wifi connect <(B)SSID> [password <password>] [wep-key-type key|phrase] "
+"[iface <iface>] [bssid <BSSID>] [name <name>]\n"
+"               [--private] [--nowait] [--timeout <timeout>]\n"
+"  wimax [list [iface <iface>] [nsp <name>]]\n"
+"\n"
+msgstr ""
+"वापर: nmcli device { COMMAND | help }\n"
+"\n"
+"  COMMAND := { status | list | disconnect | wifi | wimax }\n"
+"\n"
+"  COMMAND := { status | list | disconnect | wifi }\n"
+"\n"
+"  status\n"
+"  list [iface <iface>]\n"
+"  disconnect iface <iface> [--nowait] [--timeout <timeout>]\n"
+"  wifi [list [iface <iface>] [bssid <BSSID>]]\n"
+"  wifi connect <(B)SSID> [password <password>] [wep-key-type key|phrase] "
+"[iface <iface>] [bssid <BSSID>] [name <name>]\n"
+"               [--private] [--nowait] [--timeout <timeout>]\n"
+"  wimax [list [iface <iface>] [nsp <name>]]\n"
+"\n"
+
+#: ../cli/src/devices.c:344
+msgid "(none)"
+msgstr "(काहिच नाही)"
+
+#: ../cli/src/devices.c:400
+#, c-format
+msgid "%u MHz"
+msgstr "%u MHz"
+
+#: ../cli/src/devices.c:401
+#, c-format
+msgid "%u MB/s"
+msgstr "%u MB/s"
+
+#: ../cli/src/devices.c:410
+msgid "Encrypted: "
+msgstr "एनक्रिप्टेड: "
+
+#: ../cli/src/devices.c:415
+msgid "WEP "
+msgstr "WEP "
+
+#: ../cli/src/devices.c:417
+msgid "WPA "
+msgstr "WPA "
+
+#: ../cli/src/devices.c:419
+msgid "WPA2 "
+msgstr "WPA2 "
+
+#: ../cli/src/devices.c:422
+msgid "Enterprise "
+msgstr "एंटरप्राइज"
+
+#: ../cli/src/devices.c:431
+msgid "Ad-Hoc"
+msgstr "ऍड-हॉक"
+
+#: ../cli/src/devices.c:432
+msgid "Infrastructure"
+msgstr "इंफ्रास्ट्रक्चर"
+
+#: ../cli/src/devices.c:468
+msgid "Home"
+msgstr "होम"
+
+#: ../cli/src/devices.c:471
+msgid "Partner"
+msgstr "पार्टनर"
+
+#: ../cli/src/devices.c:474
+msgid "Roaming"
+msgstr "रोमिंग"
+
+#: ../cli/src/devices.c:546
+#, c-format
+msgid "Error: 'dev list': %s"
+msgstr "त्रुटी: 'dev list': %s"
+
+#: ../cli/src/devices.c:548
+#, c-format
+msgid "Error: 'dev list': %s; allowed fields: %s"
+msgstr "त्रुटी: 'dev list': %s; स्वीकार्य क्षेत्र: %s"
+
+#: ../cli/src/devices.c:557
+msgid "Device details"
+msgstr "साधनाचे तपशील"
+
+#: ../cli/src/devices.c:602 ../cli/src/devices.c:605 ../cli/src/devices.c:1081
+#: ../cli/src/utils.c:477
+msgid "(unknown)"
+msgstr "(अपरिचीत)"
+
+#: ../cli/src/devices.c:614
+msgid "not connected"
+msgstr "जोडणी अशक्य"
+
+#: ../cli/src/devices.c:641
+#, c-format
+msgid "%u Mb/s"
+msgstr "%u Mb/s"
+
+#. Print header
+#. "WIRED-PROPERTIES"
+#: ../cli/src/devices.c:715
+msgid "on"
+msgstr "सुरू करा"
+
+#: ../cli/src/devices.c:715
+msgid "off"
+msgstr "बंद करा"
+
+#: ../cli/src/devices.c:923
+#, c-format
+msgid "Error: 'dev status': %s"
+msgstr "त्रुटी: 'dev status': %s"
+
+#: ../cli/src/devices.c:925
+#, c-format
+msgid "Error: 'dev status': %s; allowed fields: %s"
+msgstr "त्रुटी: 'dev status': %s; स्वीकार्य क्षेत्र: %s"
+
+#: ../cli/src/devices.c:948
+msgid "Status of devices"
+msgstr "साधनांची स्थिती"
+
+#: ../cli/src/devices.c:979
+#, c-format
+msgid "Error: '%s' argument is missing."
+msgstr "त्रुटी: '%s' घटक आढळले नाही."
+
+#: ../cli/src/devices.c:1020 ../cli/src/devices.c:1185
+#: ../cli/src/devices.c:1326 ../cli/src/devices.c:1973
+#, c-format
+msgid "Error: Device '%s' not found."
+msgstr "त्रुटी: साधन '%s' आढळले नाही."
+
+#: ../cli/src/devices.c:1043
+#, c-format
+msgid "Success: Device '%s' successfully disconnected."
+msgstr "यशस्वी: साधन '%s' यशस्वीरित्या खंडीत झाले."
+
+#: ../cli/src/devices.c:1078
+#, c-format
+msgid "Error: Device '%s' (%s) disconnecting failed: %s"
+msgstr "त्रुटी: साधन '%s' (%s) खंडीत होणे अपयशी झाले: %s"
+
+#: ../cli/src/devices.c:1091
+#, c-format
+msgid "Device '%s' has been disconnected.\n"
+msgstr "साधन '%s' खंडीत झाले. \n"
+
+#: ../cli/src/devices.c:1154
+#, c-format
+msgid "Error: iface has to be specified."
+msgstr "त्रुटी: iface निर्देशीत करणे आवश्यक आहे."
+
+#: ../cli/src/devices.c:1284
+#, c-format
+msgid "Error: 'dev wifi': %s"
+msgstr "त्रुटी: 'dev wifi': %s"
+
+#: ../cli/src/devices.c:1286
+#, c-format
+msgid "Error: 'dev wifi': %s; allowed fields: %s"
+msgstr "त्रुटी: 'dev wifi': %s; स्वीकार्य क्षेत्र: %s"
+
+#: ../cli/src/devices.c:1309
+msgid "WiFi scan list"
+msgstr "WiFi स्कॅन सूची"
+
+#: ../cli/src/devices.c:1346 ../cli/src/devices.c:1400
+#, c-format
+msgid "Error: Access point with bssid '%s' not found."
+msgstr "त्रुटी: bssid '%s' सह ॲक्सेस पॉइंट आढळले नाही."
+
+#: ../cli/src/devices.c:1363
+#, c-format
+msgid "Error: Device '%s' is not a WiFi device."
+msgstr "त्रुटी: साधन '%s' WiFi साधन नाही."
+
+#: ../cli/src/devices.c:1431 ../cli/src/devices.c:1477
+#, c-format
+msgid "Connection with UUID '%s' created and activated on device '%s'\n"
+msgstr "UUID '%s' सह जोडणी निर्माण केली व साधन '%s' वर सुरू केली\n"
+
+#: ../cli/src/devices.c:1436
+#, c-format
+msgid "Error: Connection activation failed: (%d) %s."
+msgstr "त्रुटी: जोडणी सुरू करणे अपयशी: (%d) %s."
+
+#: ../cli/src/devices.c:1461
+#, c-format
+msgid "Error: Failed to add/activate new connection: (%d) %s"
+msgstr "त्रुटी: नवीन जोडणी: (%d) %s समाविष्ट/सुरू करण्यास अपयशी"
+
+#: ../cli/src/devices.c:1469
+#, c-format
+msgid "Error: Failed to add/activate new connection: Unknown error"
+msgstr "त्रुटी: नवीन जोडणी समाविष्ट/सुरू करण्यास अपयशी: अपरिचीत त्रुटी"
+
+#: ../cli/src/devices.c:1613
+#, c-format
+msgid "Error: SSID or BSSID are missing."
+msgstr "त्रुटी: SSID किंवा BSSID आढळले नाही."
+
+#: ../cli/src/devices.c:1636
+#, c-format
+msgid "Error: bssid argument value '%s' is not a valid BSSID."
+msgstr "त्रुटी: bssid घटक मूल्य '%s' वैध BSSID नाही."
+
+#: ../cli/src/devices.c:1660
+#, c-format
+msgid ""
+"Error: wep-key-type argument value '%s' is invalid, use 'key' or 'phrase'."
+msgstr ""
+"त्रुटी: wep-key-type आर्ग्युमेंट मूल्य '%s' अवैध आहे, 'key' किंवा 'phrase'चा "
+"वापर करा."
+
+#: ../cli/src/devices.c:1700
+#, c-format
+msgid "Error: BSSID to connect to (%s) differs from bssid argument (%s)."
+msgstr "त्रुटी: जोडण्याजोगी BSSID (%s) bssid आर्ग्युमेंट (%s) पासून भिन्न आहे."
+
+#: ../cli/src/devices.c:1706
+#, c-format
+msgid "Error: Parameter '%s' is neither SSID nor BSSID."
+msgstr "त्रुटी: घटक '%s' SSID किंवा BSSID नाही."
+
+#: ../cli/src/devices.c:1735
+#, c-format
+msgid "Error: Device '%s' is not a Wi-Fi device."
+msgstr "त्रुटी: साधन '%s' Wi-Fi साधन नाही."
+
+#: ../cli/src/devices.c:1737
+#, c-format
+msgid "Error: No Wi-Fi device found."
+msgstr "त्रुटी: Wi-Fi साधन आढळले नाही."
+
+#: ../cli/src/devices.c:1755
+#, c-format
+msgid "Error: No network with SSID '%s' found."
+msgstr "त्रुटी: SSID '%s' सह नेटवर्क आढळले नाही."
+
+#: ../cli/src/devices.c:1757
+#, c-format
+msgid "Error: No access point with BSSID '%s' found."
+msgstr "त्रुटी: BSSID '%s' सह ॲक्सेस पॉईंट आढळले नाही."
+
+#: ../cli/src/devices.c:1855
+#, c-format
+msgid "Error: 'dev wifi' command '%s' is not valid."
+msgstr "त्रुटी: 'dev wifi' आदेश '%s' वैध नाही."
+
+#: ../cli/src/devices.c:1931
+#, c-format
+msgid "Error: 'dev wimax': %s"
+msgstr "त्रुटी: 'dev wimax': %s"
+
+#: ../cli/src/devices.c:1933
+#, c-format
+msgid "Error: 'dev wimax': %s; allowed fields: %s"
+msgstr "त्रुटी: 'dev wimax': %s; स्वीकार्य क्षेत्र: %s"
+
+#: ../cli/src/devices.c:1956
+msgid "WiMAX NSP list"
+msgstr "WiMAX NSP सूची"
+
+#: ../cli/src/devices.c:1993
+#, c-format
+msgid "Error: NSP with name '%s' not found."
+msgstr "त्रुटी: NSP, साधन '%s' सह आढळले नाही."
+
+#: ../cli/src/devices.c:2004
+#, c-format
+msgid "Error: Device '%s' is not a WiMAX device."
+msgstr "त्रुटी: साधन '%s' हे WiMAX साधन नाही."
+
+#: ../cli/src/devices.c:2035
+#, c-format
+msgid "Error: Access point with nsp '%s' not found."
+msgstr "त्रुटी: nsp '%s' सह ॲक्सेस पॉईंट आढळले नाही."
+
+#: ../cli/src/devices.c:2062
+#, c-format
+msgid "Error: 'dev wimax' command '%s' is not valid."
+msgstr "त्रुटी: 'dev wimax' आदेश '%s' वैध नाही."
+
+#: ../cli/src/devices.c:2115
+#, c-format
+msgid "Error: 'dev' command '%s' is not valid."
+msgstr "त्रुटी: 'dev' आदेश '%s' वैध नाही."
+
+#: ../cli/src/network-manager.c:37
+msgid "RUNNING"
+msgstr "RUNNING"
+
+#. 0
+#: ../cli/src/network-manager.c:38
+msgid "VERSION"
+msgstr "VERSION"
+
+#. 2
+#: ../cli/src/network-manager.c:40
+msgid "NET-ENABLED"
+msgstr "NET-ENABLED"
+
+#. 3
+#: ../cli/src/network-manager.c:41
+msgid "WIFI-HARDWARE"
+msgstr "WIFI-HARDWARE"
+
+#. 4
+#: ../cli/src/network-manager.c:42
+msgid "WIFI"
+msgstr "WIFI"
+
+#. 5
+#: ../cli/src/network-manager.c:43
+msgid "WWAN-HARDWARE"
+msgstr "WWAN-HARDWARE"
+
+#. 6
+#: ../cli/src/network-manager.c:44
+msgid "WWAN"
+msgstr "WWAN"
+
+#. 7
+#: ../cli/src/network-manager.c:45
+msgid "WIMAX-HARDWARE"
+msgstr "WIMAX-HARDWARE"
+
+#. 8
+#: ../cli/src/network-manager.c:46
+msgid "WIMAX"
+msgstr "WIMAX"
+
+#: ../cli/src/network-manager.c:62
+msgid "PERMISSION"
+msgstr "PERMISSION"
+
+#. 0
+#: ../cli/src/network-manager.c:63
+msgid "VALUE"
+msgstr "VALUE"
+
+#: ../cli/src/network-manager.c:77
+#, c-format
+msgid ""
+"Usage: nmcli nm { COMMAND | help }\n"
+"\n"
+"  COMMAND := { status | permissions | enable | sleep | wifi | wwan | "
+"wimax }\n"
+"\n"
+"  COMMAND := { status | permissions | enable | sleep | wifi | wwan }\n"
+"\n"
+"  status\n"
+"  permissions\n"
+"  enable [true|false]\n"
+"  sleep [true|false]\n"
+"  wifi [on|off]\n"
+"  wwan [on|off]\n"
+"  wimax [on|off]\n"
+"\n"
+msgstr ""
+"वापर: nmcli nm { COMMAND | help }\n"
+"\n"
+"  COMMAND := { status | permissions | enable | sleep | wifi | wwan | "
+"wimax }\n"
+"\n"
+"  COMMAND := { status | permissions | enable | sleep | wifi | wwan }\n"
+"\n"
+"  status\n"
+"  permissions\n"
+"  enable [true|false]\n"
+"  sleep [true|false]\n"
+"  wifi [on|off]\n"
+"  wwan [on|off]\n"
+"  wimax [on|off]\n"
+"\n"
+
+#: ../cli/src/network-manager.c:108
+msgid "asleep"
+msgstr "अस्लीप्"
+
+#: ../cli/src/network-manager.c:110
+msgid "connecting"
+msgstr "जोडणी करत आहे"
+
+#: ../cli/src/network-manager.c:112
+msgid "connected (local only)"
+msgstr "जोडले (फक्त स्थानीय)"
+
+#: ../cli/src/network-manager.c:114
+msgid "connected (site only)"
+msgstr "जोडले (फक्त स्थळ)"
+
+#: ../cli/src/network-manager.c:118
+msgid "disconnecting"
+msgstr "जोडणी अशक्य करत आहे"
+
+#: ../cli/src/network-manager.c:158
+#, c-format
+msgid "Error: 'nm status': %s"
+msgstr "त्रुटी: 'nm status': %s"
+
+#: ../cli/src/network-manager.c:160
+#, c-format
+msgid "Error: 'nm status': %s; allowed fields: %s"
+msgstr "त्रुटी: 'nm status': %s; स्वीकार्य क्षेत्र: %s"
+
+#. create NMClient
+#: ../cli/src/network-manager.c:173 ../cli/src/network-manager.c:174
+#: ../cli/src/network-manager.c:175 ../cli/src/network-manager.c:176
+#: ../cli/src/network-manager.c:177 ../cli/src/network-manager.c:179
+#: ../cli/src/network-manager.c:180 ../cli/src/network-manager.c:429
+#: ../cli/src/network-manager.c:484 ../cli/src/network-manager.c:522
+#: ../cli/src/network-manager.c:561
+msgid "enabled"
+msgstr "सुरू केले"
+
+#: ../cli/src/network-manager.c:173 ../cli/src/network-manager.c:174
+#: ../cli/src/network-manager.c:175 ../cli/src/network-manager.c:176
+#: ../cli/src/network-manager.c:177 ../cli/src/network-manager.c:179
+#: ../cli/src/network-manager.c:180 ../cli/src/network-manager.c:429
+#: ../cli/src/network-manager.c:484 ../cli/src/network-manager.c:522
+#: ../cli/src/network-manager.c:561
+msgid "disabled"
+msgstr "बंद केले"
+
+#: ../cli/src/network-manager.c:193
+msgid "NetworkManager status"
+msgstr "NetworkManager स्थिती"
+
+#. Print header
+#: ../cli/src/network-manager.c:196
+msgid "running"
+msgstr "कार्यरत आहे"
+
+#: ../cli/src/network-manager.c:196
+msgid "not running"
+msgstr "कार्यरत नाही"
+
+#: ../cli/src/network-manager.c:271
+msgid "auth"
+msgstr "auth"
+
+#: ../cli/src/network-manager.c:301
+#, c-format
+msgid "Error: 'nm permissions': %s"
+msgstr "त्रुटी: 'nm permissions': %s"
+
+#: ../cli/src/network-manager.c:303
+#, c-format
+msgid "Error: 'nm permissions': %s; allowed fields: %s"
+msgstr "त्रुटी: 'nm permissions': %s; स्वीकार्य क्षेत्र: %s"
+
+#: ../cli/src/network-manager.c:324
+msgid "NetworkManager permissions"
+msgstr "NetworkManager परवानगी"
+
+#: ../cli/src/network-manager.c:350 ../cli/src/utils.c:457
+#, c-format
+msgid "Error: Couldn't connect to system bus: %s"
+msgstr "त्रुटी: सिस्टम बससह जोडणी करणे अशक्य: %s"
+
+#: ../cli/src/network-manager.c:361
+#, c-format
+msgid "Error: Couldn't create D-Bus object proxy."
+msgstr "त्रुटी: D-Bus ऑब्जेक्ट प्रॉक्सी निर्माण करणे अशक्य."
+
+#: ../cli/src/network-manager.c:367
+#, c-format
+msgid "Error in sleep: %s"
+msgstr "sleep मध्ये त्रुटी आढळली: %s"
+
+#: ../cli/src/network-manager.c:416 ../cli/src/network-manager.c:471
+#: ../cli/src/network-manager.c:509 ../cli/src/network-manager.c:548
+#, c-format
+msgid "Error: '--fields' value '%s' is not valid here; allowed fields: %s"
+msgstr "त्रुटी: येथील '--fields' मूल्य '%s' वैध नाही; स्वीकार्य क्षेत्र: %s"
+
+#: ../cli/src/network-manager.c:424
+msgid "Networking enabled"
+msgstr "नेटवर्किंग सुरू केले"
+
+#: ../cli/src/network-manager.c:440
+#, c-format
+msgid "Error: invalid 'enable' parameter: '%s'; use 'true' or 'false'."
+msgstr "त्रुटी: अवैध 'enable' घटक: '%s'; 'true' किंवा 'false' चा वापर करा."
+
+#: ../cli/src/network-manager.c:450
+#, c-format
+msgid "Error: Sleeping status is not exported by NetworkManager."
+msgstr "त्रुटी: स्लिपिंग स्तर NetworkManager द्वारे एक्सपोर्ट केले जात नाही."
+
+#: ../cli/src/network-manager.c:458
+#, c-format
+msgid "Error: invalid 'sleep' parameter: '%s'; use 'true' or 'false'."
+msgstr "त्रुटी: अवैध 'sleep' घटक: '%s'; 'true' किंवा 'false'चा वापर करा."
+
+#: ../cli/src/network-manager.c:479
+msgid "WiFi enabled"
+msgstr "WiFi समर्थीत"
+
+#: ../cli/src/network-manager.c:495
+#, c-format
+msgid "Error: invalid 'wifi' parameter: '%s'."
+msgstr "त्रुटी: अवैध 'wifi' घटक: '%s'."
+
+#: ../cli/src/network-manager.c:517
+msgid "WWAN enabled"
+msgstr "WWAN समर्थीत"
+
+#: ../cli/src/network-manager.c:533
+#, c-format
+msgid "Error: invalid 'wwan' parameter: '%s'."
+msgstr "त्रुटी: अवैध 'wwan' घटक: '%s'."
+
+#: ../cli/src/network-manager.c:556
+msgid "WiMAX enabled"
+msgstr "WiMAX समर्थीत"
+
+#: ../cli/src/network-manager.c:572
+#, c-format
+msgid "Error: invalid 'wimax' parameter: '%s'."
+msgstr "त्रुटी: अवैध 'wimax' घटक: '%s'."
+
+#: ../cli/src/network-manager.c:588
+#, c-format
+msgid "Error: 'nm' command '%s' is not valid."
+msgstr "त्रुटी: 'nm' आदेश '%s' वैध नाही."
+
+#: ../cli/src/nmcli.c:76
+#, c-format
+#| msgid ""
+#| "Usage: %s [OPTIONS] OBJECT { COMMAND | help }\n"
+#| "\n"
+#| "OPTIONS\n"
+#| "  -t[erse]                                   terse output\n"
+#| "  -p[retty]                                  pretty output\n"
+#| "  -m[ode] tabular|multiline                  output mode\n"
+#| "  -f[ields] <field1,field2,...>|all|common   specify fields to output\n"
+#| "  -e[scape] yes|no                           escape columns separators in "
+#| "values\n"
+#| "  -n[ocheck]                                 don't check nmcli and "
+#| "NetworkManager versions\n"
+#| "  -v[ersion]                                 show program version\n"
+#| "  -h[elp]                                    print this help\n"
+#| "\n"
+#| "OBJECT\n"
+#| "  nm          NetworkManager status\n"
+#| "  con         NetworkManager connections\n"
+#| "  dev         devices managed by NetworkManager\n"
+#| "\n"
+msgid ""
+"Usage: %s [OPTIONS] OBJECT { COMMAND | help }\n"
+"\n"
+"OPTIONS\n"
+"  -t[erse]                                   terse output\n"
+"  -p[retty]                                  pretty output\n"
+"  -m[ode] tabular|multiline                  output mode\n"
+"  -f[ields] <field1,field2,...>|all|common   specify fields to output\n"
+"  -e[scape] yes|no                           escape columns separators in "
+"values\n"
+"  -n[ocheck]                                 don't check nmcli and "
+"NetworkManager versions\n"
+"  -v[ersion]                                 show program version\n"
+"  -h[elp]                                    print this help\n"
+"\n"
+"OBJECT\n"
+"  nm              NetworkManager's status\n"
+"  c[onnection]    NetworkManager's connections\n"
+"  d[evice]        devices managed by NetworkManager\n"
+"\n"
+msgstr ""
+"वापर: %s [OPTIONS] OBJECT { COMMAND | help }\n"
+"\n"
+"OPTIONS\n"
+"  -t[erse]                                   terse output\n"
+"  -p[retty]                                  pretty output\n"
+"  -m[ode] tabular|multiline                  output mode\n"
+"  -f[ields] <field1,field2,...>|all|common   specify fields to output\n"
+"  -e[scape] yes|no                           escape columns separators in "
+"values\n"
+"  -n[ocheck]                                 don't check nmcli and "
+"NetworkManager versions\n"
+"  -v[ersion]                                 show program version\n"
+"  -h[elp]                                    print this help\n"
+"\n"
+"OBJECT\n"
+"  nm              NetworkManager's status\n"
+"  c[onnection]    NetworkManager's connections\n"
+"  d[evice]        devices managed by NetworkManager\n"
+"\n"
+
+#: ../cli/src/nmcli.c:124
+#, c-format
+msgid "Error: Object '%s' is unknown, try 'nmcli help'."
+msgstr "त्रुटी: घटक '%s' अपरिचीत आहे, 'nmcli help' वापरून पहा."
+
+#: ../cli/src/nmcli.c:154
+#, c-format
+msgid "Error: Option '--terse' is specified the second time."
+msgstr "त्रुटी: पर्याय '--terse' दुसऱ्यावेळी निर्देशीत केले."
+
+#: ../cli/src/nmcli.c:159
+#, c-format
+msgid "Error: Option '--terse' is mutually exclusive with '--pretty'."
+msgstr "त्रुटी: '--pretty' च्या तुलनेत पर्याय '--terse' वेगळे आहे."
+
+#: ../cli/src/nmcli.c:167
+#, c-format
+msgid "Error: Option '--pretty' is specified the second time."
+msgstr "त्रुटी: पर्याय '--pretty' दुसऱ्यावेळी निर्देशीत केले."
+
+#: ../cli/src/nmcli.c:172
+#, c-format
+msgid "Error: Option '--pretty' is mutually exclusive with '--terse'."
+msgstr "त्रुटी: '--terse' च्या तुलनेत पर्याय '--pretty' वेगळे आहे."
+
+#: ../cli/src/nmcli.c:182 ../cli/src/nmcli.c:198
+#, c-format
+msgid "Error: missing argument for '%s' option."
+msgstr "त्रुटी: '%s' पर्यायकरीता न आढळलेले घटक."
+
+#: ../cli/src/nmcli.c:191 ../cli/src/nmcli.c:207
+#, c-format
+msgid "Error: '%s' is not valid argument for '%s' option."
+msgstr "त्रुटी: '%s' पर्यायकरीता '%s' वैध घटक नाही."
+
+#: ../cli/src/nmcli.c:214
+#, c-format
+msgid "Error: fields for '%s' options are missing."
+msgstr "त्रुटी: '%s' पर्यायकरीता क्षेत्र आढळले नाही."
+
+#: ../cli/src/nmcli.c:222
+#, c-format
+msgid "nmcli tool, version %s\n"
+msgstr "nmcli साधन, आवृत्ती %s\n"
+
+#: ../cli/src/nmcli.c:228
+#, c-format
+msgid "Error: Option '%s' is unknown, try 'nmcli -help'."
+msgstr "त्रुटी: पर्याय '%s' अपरिचीत आहे, 'nmcli -help' वापरून पहा."
+
+#: ../cli/src/nmcli.c:247
+#, c-format
+msgid "Caught signal %d, shutting down..."
+msgstr "संकेत %d प्राप्त झाले, बंद करत आहे..."
+
+#: ../cli/src/nmcli.c:272
+msgid "Error: Could not create NMClient object."
+msgstr "त्रुटी: NMClient ऑब्जेक्ट निर्माण करणे अशक्य."
+
+#: ../cli/src/nmcli.c:288
+msgid "Success"
+msgstr "यश"
+
+#: ../cli/src/settings.c:527
+#, c-format
+msgid "%d (hex-ascii-key)"
+msgstr "%d (hex-ascii-key)"
+
+#: ../cli/src/settings.c:529
+#, c-format
+msgid "%d (104/128-bit passphrase)"
+msgstr "%d (104/128-बीट पासफ्रेज)"
+
+#: ../cli/src/settings.c:532 ../cli/src/settings.c:660
+#, c-format
+msgid "%d (unknown)"
+msgstr "%d (अपरिचीत)"
+
+#: ../cli/src/settings.c:558
+msgid "0 (unknown)"
+msgstr "0 (अपरिचीत)"
+
+#: ../cli/src/settings.c:564
+msgid "any, "
+msgstr "कुठलेही, "
+
+#: ../cli/src/settings.c:566
+msgid "900 MHz, "
+msgstr "900 MHz, "
+
+#: ../cli/src/settings.c:568
+msgid "1800 MHz, "
+msgstr "1800 MHz, "
+
+#: ../cli/src/settings.c:570
+msgid "1900 MHz, "
+msgstr "1900 MHz, "
+
+#: ../cli/src/settings.c:572
+msgid "850 MHz, "
+msgstr "850 MHz, "
+
+#: ../cli/src/settings.c:574
+msgid "WCDMA 3GPP UMTS 2100 MHz, "
+msgstr "WCDMA 3GPP UMTS 2100 MHz, "
+
+#: ../cli/src/settings.c:576
+msgid "WCDMA 3GPP UMTS 1800 MHz, "
+msgstr "WCDMA 3GPP UMTS 1800 MHz, "
+
+#: ../cli/src/settings.c:578
+msgid "WCDMA 3GPP UMTS 1700/2100 MHz, "
+msgstr "WCDMA 3GPP UMTS 1700/2100 MHz, "
+
+#: ../cli/src/settings.c:580
+msgid "WCDMA 3GPP UMTS 800 MHz, "
+msgstr "WCDMA 3GPP UMTS 800 MHz, "
+
+#: ../cli/src/settings.c:582
+msgid "WCDMA 3GPP UMTS 850 MHz, "
+msgstr "WCDMA 3GPP UMTS 850 MHz, "
+
+#: ../cli/src/settings.c:584
+msgid "WCDMA 3GPP UMTS 900 MHz, "
+msgstr "WCDMA 3GPP UMTS 900 MHz, "
+
+#: ../cli/src/settings.c:586
+msgid "WCDMA 3GPP UMTS 1700 MHz, "
+msgstr "WCDMA 3GPP UMTS 1700 MHz, "
+
+#: ../cli/src/settings.c:588
+msgid "WCDMA 3GPP UMTS 1900 MHz, "
+msgstr "WCDMA 3GPP UMTS 1900 MHz, "
+
+#: ../cli/src/settings.c:590
+msgid "WCDMA 3GPP UMTS 2600 MHz, "
+msgstr "WCDMA 3GPP UMTS 2600 MHz, "
+
+#: ../cli/src/settings.c:608
+msgid "0 (NONE)"
+msgstr "0 (NONE)"
+
+#: ../cli/src/settings.c:614
+msgid "REORDER_HEADERS, "
+msgstr "REORDER_HEADERS, "
+
+#: ../cli/src/settings.c:616
+msgid "GVRP, "
+msgstr "GVRP, "
+
+#: ../cli/src/settings.c:618
+msgid "LOOSE_BINDING, "
+msgstr "LOOSE_BINDING, "
+
+#: ../cli/src/settings.c:654
+#, c-format
+msgid "%d (disabled)"
+msgstr "%d (बंद केले)"
+
+#: ../cli/src/settings.c:656
+#, c-format
+msgid "%d (enabled, prefer public IP)"
+msgstr "%d (सुरू केले, पब्लिक IP शिफारसीय आहे)"
+
+#: ../cli/src/settings.c:658
+#, c-format
+msgid "%d (enabled, prefer temporary IP)"
+msgstr "%d (सुरू केले, तात्पुर्ते IP शिफारसीय आहे)"
+
+#: ../cli/src/settings.c:791 ../cli/src/settings.c:987
+#: ../cli/src/settings.c:1696
+msgid "auto"
+msgstr "स्वयं"
+
+#: ../cli/src/utils.c:103
+#, c-format
+msgid "Error converting IP4 address '0x%X' to text form"
+msgstr "IP4 पत्ता '0x%X' यास मजकूर स्वरूपात रूपांतरीत करतेवेळी त्रुटी"
+
+#: ../cli/src/utils.c:131
+#, c-format
+msgid "Error converting IP6 address '%s' to text form"
+msgstr "IP6 पत्ता '%s' यास मजकूर स्वरूपात रूपांतरीत करतेवेळी त्रुटी"
+
+#: ../cli/src/utils.c:232
+#, c-format
+msgid "field '%s' has to be alone"
+msgstr "क्षेत्र '%s' वेगळे असायला हवे"
+
+#: ../cli/src/utils.c:235
+#, c-format
+msgid "invalid field '%s'"
+msgstr "अवैध क्षेत्र '%s'"
+
+#: ../cli/src/utils.c:254
+msgid "Option '--terse' requires specifying '--fields'"
+msgstr "पर्याय '--terse' यांस '--fields' निर्देशीत करणे आवश्यक आहे"
+
+#: ../cli/src/utils.c:258
+#, c-format
+msgid "Option '--terse' requires specific '--fields' option values , not '%s'"
+msgstr ""
+"पर्याय '--terse' यांस '--fields' पर्याय मूल्ये निर्देशीत करणे आवश्यक आहे , '%"
+"s' नाही"
+
+#: ../cli/src/utils.c:468
+#, c-format
+msgid "Error: Couldn't create D-Bus object proxy for org.freedesktop.DBus"
+msgstr ""
+"त्रुटी: org.freedesktop.DBus करीता D-Bus ऑब्जेक्ट प्रॉक्सी निर्माण करणे अशक्य"
+
+#: ../cli/src/utils.c:476
+#, c-format
+msgid "Error: NameHasOwner request failed: %s"
+msgstr "त्रुटी: NameHasOwner विनंती अपयशी: %s"
+
+#: ../cli/src/utils.c:521
+#, c-format
+msgid ""
+"Warning: nmcli (%s) and NetworkManager (%s) versions don't match. Use --"
+"nocheck to suppress the warning.\n"
+msgstr ""
+"सावधानता: nmcli (%s) व NetworkManager (%s) आवृत्ती जुळत नाही. सावधानता "
+"दडपण्यासाठी --nocheck याचा वापर करा.\n"
+
+#: ../cli/src/utils.c:530
+#, c-format
+msgid ""
+"Error: nmcli (%s) and NetworkManager (%s) versions don't match. Force "
+"execution using --nocheck, but the results are unpredictable."
+msgstr ""
+"त्रुटी: nmcli (%s) व NetworkManager (%s) आवृत्ती जुळत नाही. जबरनरित्या "
+"चालवण्यासाठी "
+"--nocheck याचा वापर करा, परंतु परिणाम वर्तवणेजोगी नाही."
+
+#: ../libnm-util/crypto.c:133
+#, c-format
+msgid "PEM key file had no end tag '%s'."
+msgstr "PEM कि फाइल अंतर्गत समाप्त टॅघ '%s' आढळले नाही."
+
+#: ../libnm-util/crypto.c:146
+#, c-format
+msgid "Doesn't look like a PEM private key file."
+msgstr "PEM वैयक्तिक कि फाइल नुरूप आढळले नाही."
+
+#: ../libnm-util/crypto.c:154
+#, c-format
+msgid "Not enough memory to store PEM file data."
+msgstr "PEM फाइल माहिती साठवण्याकरीता स्मृती शिल्लक नाही."
+
+#: ../libnm-util/crypto.c:170
+#, c-format
+msgid "Malformed PEM file: Proc-Type was not first tag."
+msgstr "सदोषीत PEM फाइल: Proc-Type प्रथम टॅग नव्हते."
+
+#: ../libnm-util/crypto.c:178
+#, c-format
+msgid "Malformed PEM file: unknown Proc-Type tag '%s'."
+msgstr "सदोषीत PEM फाइल: अपरिचीत Proc-Type टॅग '%s'."
+
+#: ../libnm-util/crypto.c:188
+#, c-format
+msgid "Malformed PEM file: DEK-Info was not the second tag."
+msgstr "सदोषीत PEM फाइल: DEK-Info दूसरे टॅग नव्हते."
+
+#: ../libnm-util/crypto.c:199
+#, c-format
+msgid "Malformed PEM file: no IV found in DEK-Info tag."
+msgstr "सदोषीत PEM फाइल: DEK-Info टॅग अंतर्गत IV आढळले नाही."
+
+#: ../libnm-util/crypto.c:206
+#, c-format
+msgid "Malformed PEM file: invalid format of IV in DEK-Info tag."
+msgstr "सदोषीत PEM फाइल:DEK-Info टॅग अंतर्गत IV चे अवैध स्वरूप आढळे."
+
+#: ../libnm-util/crypto.c:219
+#, c-format
+msgid "Malformed PEM file: unknown private key cipher '%s'."
+msgstr "सदोषीत PEM फाइल: अपरिचीत वैयक्तिक सीफर कि '%s'."
+
+#: ../libnm-util/crypto.c:238
+#, c-format
+msgid "Could not decode private key."
+msgstr "वैयक्तिक कि डिकोड करू शकले नाही."
+
+#: ../libnm-util/crypto.c:284
+msgid "Failed to find expected PKCS#8 start tag."
+msgstr "अपेक्षित PKCS#8 सुरूवातीचे टॅग शोधण्यास अपयशी."
+
+#: ../libnm-util/crypto.c:292
+#, c-format
+msgid "Failed to find expected PKCS#8 end tag '%s'."
+msgstr "अपेक्षित PKCS#8 समाप्तिचे टॅग '%s' शोधण्यास अपयशी."
+
+#: ../libnm-util/crypto.c:312
+msgid "Not enough memory to store private key data."
+msgstr "व्यक्तिगत कि डाटा साठवण्याकरीता अतिरिक्त स्मृती नाही."
+
+#: ../libnm-util/crypto.c:317
+msgid "Failed to decode PKCS#8 private key."
+msgstr "PKCS#8 प्राइव्हेट कि डिकोड करण्यास अपयशी."
+
+#: ../libnm-util/crypto.c:339 ../libnm-util/crypto.c:625
+#, c-format
+msgid "Not enough memory to store certificate data."
+msgstr "प्रमाणपत्र माहिती साठवण्याकरीता स्मृती शिल्लक नाही."
+
+#: ../libnm-util/crypto.c:365
+#, c-format
+msgid "IV must be an even number of bytes in length."
+msgstr "IV ची लांबी सम बाईटस् ची संख्या असायला हवी."
+
+#: ../libnm-util/crypto.c:374
+#, c-format
+msgid "Not enough memory to store the IV."
+msgstr "IV साठवण्याकरीता स्मृती शिल्ल्क नाही."
+
+#: ../libnm-util/crypto.c:385
+#, c-format
+msgid "IV contains non-hexadecimal digits."
+msgstr "IV अंतर्गत non-hexadecimal अंक."
+
+#: ../libnm-util/crypto.c:423 ../libnm-util/crypto_gnutls.c:147
+#: ../libnm-util/crypto_gnutls.c:265 ../libnm-util/crypto_nss.c:167
+#: ../libnm-util/crypto_nss.c:332
+#, c-format
+msgid "Private key cipher '%s' was unknown."
+msgstr "वैयक्तिक कि सिफर '%s' अपरिचीत नुरूप आढळले."
+
+#: ../libnm-util/crypto.c:432
+#, c-format
+msgid "Not enough memory to decrypt private key."
+msgstr "फाइल माहिती साठवण्याकरीता स्मृती शिल्लक नाही."
+
+#: ../libnm-util/crypto.c:497
+#, c-format
+msgid "Not enough memory to store decrypted private key."
+msgstr "जुणी वैयक्तिक कि साठवण्याकरीता स्मृती शिल्ल्क नाही."
+
+#: ../libnm-util/crypto.c:542
+#, c-format
+msgid "Unable to determine private key type."
+msgstr "वैयक्तिक कि प्रकार ओळखणे अशक्य."
+
+#: ../libnm-util/crypto.c:597
+#, c-format
+msgid "PEM certificate had no start tag '%s'."
+msgstr "PEM प्रमाणपत्रात सुरवात टॅग '%s' आढळले नाही."
+
+#: ../libnm-util/crypto.c:606
+#, c-format
+msgid "PEM certificate had no end tag '%s'."
+msgstr "PEM प्रमाणपत्रात समाप्त टॅग '%s' आढळले नाही."
+
+#: ../libnm-util/crypto.c:630
+#, c-format
+msgid "Failed to decode certificate."
+msgstr "प्रमाणपत्र डिकोड करण्यास अपयशी."
+
+#: ../libnm-util/crypto_gnutls.c:50
+msgid "Failed to initialize the crypto engine."
+msgstr "क्रिप्टो इंजीन प्रारंभ करण्यास अपयशी."
+
+#: ../libnm-util/crypto_gnutls.c:92
+#, c-format
+msgid "Failed to initialize the MD5 engine: %s / %s."
+msgstr "MD5 इंजीन प्रारंभ करण्यास अपयशी: %s / %s."
+
+#: ../libnm-util/crypto_gnutls.c:155
+#, c-format
+msgid "Invalid IV length (must be at least %zd)."
+msgstr "अवैध IV लांबी (किमान %zd असायला हवे)."
+
+#: ../libnm-util/crypto_gnutls.c:164 ../libnm-util/crypto_nss.c:184
+#, c-format
+msgid "Not enough memory for decrypted key buffer."
+msgstr "जुणे कि बफर करीता स्मृती शिल्लक नाही."
+
+#: ../libnm-util/crypto_gnutls.c:172
+#, c-format
+msgid "Failed to initialize the decryption cipher context: %s / %s."
+msgstr "डिक्रीपशन सिफर संदर्भ प्रारंभ करण्यास अपयशी: %s / %s."
+
+#: ../libnm-util/crypto_gnutls.c:181
+#, c-format
+msgid "Failed to set symmetric key for decryption: %s / %s."
+msgstr "डिक्रीपशन करीता सम कि निश्चित करण्यास अपयशी: %s / %s."
+
+#: ../libnm-util/crypto_gnutls.c:190
+#, c-format
+msgid "Failed to set IV for decryption: %s / %s."
+msgstr "डिक्रीपशन करीता IV निश्चित करण्यास अपयशी: %s / %s."
+
+#: ../libnm-util/crypto_gnutls.c:199
+#, c-format
+msgid "Failed to decrypt the private key: %s / %s."
+msgstr "वैयक्तिक कि डिक्रीप्ट करण्यास अपयशी: %s / %s."
+
+#: ../libnm-util/crypto_gnutls.c:209 ../libnm-util/crypto_nss.c:263
+#, c-format
+msgid "Failed to decrypt the private key: unexpected padding length."
+msgstr "प्राइव्हेट कि डिक्रीप्ट करणे अशक्य: अनपेक्षीत पॅडींग लांबी."
+
+#: ../libnm-util/crypto_gnutls.c:220 ../libnm-util/crypto_nss.c:274
+#, c-format
+msgid "Failed to decrypt the private key."
+msgstr "वैयक्तिक कि डिक्रीप्ट करण्यास अपयशी."
+
+#: ../libnm-util/crypto_gnutls.c:285 ../libnm-util/crypto_nss.c:352
+#, c-format
+msgid "Could not allocate memory for encrypting."
+msgstr "एनक्रिप्टींग करीता मेमरीचे वाटप करणे अशक्य."
+
+#: ../libnm-util/crypto_gnutls.c:293
+#, c-format
+msgid "Failed to initialize the encryption cipher context: %s / %s."
+msgstr "एनक्रिप्शन सीफर संदर्भ सुरू करण्यास अपयशी: %s / %s."
+
+#: ../libnm-util/crypto_gnutls.c:302
+#, c-format
+msgid "Failed to set symmetric key for encryption: %s / %s."
+msgstr "एनक्रिप्शनकरीता सम कि सेट करण्यास अपयशी: %s / %s."
+
+#: ../libnm-util/crypto_gnutls.c:312
+#, c-format
+msgid "Failed to set IV for encryption: %s / %s."
+msgstr "एनक्रिप्शन करीता IV सेट करण्यास अपयशी: %s / %s."
+
+#: ../libnm-util/crypto_gnutls.c:321
+#, c-format
+msgid "Failed to encrypt the data: %s / %s."
+msgstr "डिक्रीप्ट करण्यास अपयशी: %s / %s."
+
+#: ../libnm-util/crypto_gnutls.c:361
+#, c-format
+msgid "Error initializing certificate data: %s"
+msgstr "प्रमाण माहिती प्रारंभ करण्यास त्रुटी: %s"
+
+#: ../libnm-util/crypto_gnutls.c:383
+#, c-format
+msgid "Couldn't decode certificate: %s"
+msgstr "प्रमाणपत्र डिकोड करण्यास अशक्य: %s"
+
+#: ../libnm-util/crypto_gnutls.c:407
+#, c-format
+msgid "Couldn't initialize PKCS#12 decoder: %s"
+msgstr "PKCS#12 डिकोडर प्रारंभ करण्यास अशक्य: %s"
+
+#: ../libnm-util/crypto_gnutls.c:420
+#, c-format
+msgid "Couldn't decode PKCS#12 file: %s"
+msgstr "PKCS#12 फाइल डिकोड करण्यास अपयशी: %s"
+
+#: ../libnm-util/crypto_gnutls.c:432
+#, c-format
+msgid "Couldn't verify PKCS#12 file: %s"
+msgstr "PKCS#12 फाइल तपासण्यास अशक्य: %s"
+
+#: ../libnm-util/crypto_gnutls.c:460
+#, c-format
+msgid "Couldn't initialize PKCS#8 decoder: %s"
+msgstr "PKCS#8 डिकोडर: %s सुरू करणे अशक्य"
+
+#: ../libnm-util/crypto_gnutls.c:483
+#, c-format
+msgid "Couldn't decode PKCS#8 file: %s"
+msgstr "PKCS#8 फाइल: %s डिकोड करणे अशक्य"
+
+#: ../libnm-util/crypto_nss.c:56
+#, c-format
+msgid "Failed to initialize the crypto engine: %d."
+msgstr "क्रिप्टो इंजीन प्रारंभ करण्यास अपयशी: %d."
+
+#: ../libnm-util/crypto_nss.c:107
+#, c-format
+msgid "Failed to initialize the MD5 context: %d."
+msgstr "MD5 संदर्भ प्रारंभ करण्यास अपयशी: %d."
+
+#: ../libnm-util/crypto_nss.c:175
+#, c-format
+msgid "Invalid IV length (must be at least %d)."
+msgstr "अवैध IV लांबी (किमान %d असायला हवे)."
+
+#: ../libnm-util/crypto_nss.c:192
+#, c-format
+msgid "Failed to initialize the decryption cipher slot."
+msgstr "डिक्रीपशन सिफर क्षेत्र प्रारंभ करण्यास अपयशी."
+
+#: ../libnm-util/crypto_nss.c:202
+#, c-format
+msgid "Failed to set symmetric key for decryption."
+msgstr "डिक्रीपशन करीता सम कि निश्चित करण्यास अपयशी."
+
+#: ../libnm-util/crypto_nss.c:212
+#, c-format
+msgid "Failed to set IV for decryption."
+msgstr "डिक्रीपशन करीता IV निश्चित करण्यास अपयशी."
+
+#: ../libnm-util/crypto_nss.c:220
+#, c-format
+msgid "Failed to initialize the decryption context."
+msgstr "डिक्रीपशन संदर्भ प्रारंभ करण्यास अपयशी."
+
+#: ../libnm-util/crypto_nss.c:233
+#, c-format
+msgid "Failed to decrypt the private key: %d."
+msgstr "वैयक्तिक कि डिक्रीप्ट करण्यास अपयशी: %d."
+
+#: ../libnm-util/crypto_nss.c:241
+#, c-format
+msgid "Failed to decrypt the private key: decrypted data too large."
+msgstr ""
+"प्राइव्हेट कि डिक्रीप्ट करणे अशक्य: डिक्रीप्ट केलेला डाटा खूप मोठा आहे."
+
+#: ../libnm-util/crypto_nss.c:252
+#, c-format
+msgid "Failed to finalize decryption of the private key: %d."
+msgstr "वैयक्तिक किचे डिक्रीपशन ठरविण्यास अपयशी: %d."
+
+#: ../libnm-util/crypto_nss.c:360
+#, c-format
+msgid "Failed to initialize the encryption cipher slot."
+msgstr "एनक्रिप्शन सीफर स्लॉट सुरू करणे अशक्य."
+
+#: ../libnm-util/crypto_nss.c:368
+#, c-format
+msgid "Failed to set symmetric key for encryption."
+msgstr "एनक्रिप्शन करीता सिमेट्रीक कि सेट करण्यास अपयशी."
+
+#: ../libnm-util/crypto_nss.c:376
+#, c-format
+msgid "Failed to set IV for encryption."
+msgstr "एनक्रिप्शनसाठी IV सेट करण्यास अपयशी."
+
+#: ../libnm-util/crypto_nss.c:384
+#, c-format
+msgid "Failed to initialize the encryption context."
+msgstr "एनक्रिप्शन संदर्भ प्रारंभ करण्यास अपयशी."
+
+#: ../libnm-util/crypto_nss.c:392
+#, c-format
+msgid "Failed to encrypt: %d."
+msgstr "एनक्रिप्ट करण्यास अपयशी: %d."
+
+#: ../libnm-util/crypto_nss.c:400
+#, c-format
+msgid "Unexpected amount of data after encrypting."
+msgstr "एनक्रिप्टींग नंतर अनपेक्षीत डाटाचे प्रमाण."
+
+#: ../libnm-util/crypto_nss.c:443
+#, c-format
+msgid "Couldn't decode certificate: %d"
+msgstr "प्रमाणपत्र डिकोड करणे अशक्य: %d"
+
+#: ../libnm-util/crypto_nss.c:478
+#, c-format
+msgid "Couldn't convert password to UCS2: %d"
+msgstr "परवलीचा शब्द UCS2 नुरूप रूपांतरन अशक्य: %d"
+
+#: ../libnm-util/crypto_nss.c:506
+#, c-format
+msgid "Couldn't initialize PKCS#12 decoder: %d"
+msgstr "PKCS#12 डिकोडर प्रारंभ करण्यास अशक्य: %d"
+
+#: ../libnm-util/crypto_nss.c:515
+#, c-format
+msgid "Couldn't decode PKCS#12 file: %d"
+msgstr "PKCS#12 फाइल डिकोड करण्यास अशक्य: %d"
+
+#: ../libnm-util/crypto_nss.c:524
+#, c-format
+msgid "Couldn't verify PKCS#12 file: %d"
+msgstr "PKCS#12 फाइल तपास करण्यास अशक्य: %d"
+
+#: ../libnm-util/crypto_nss.c:568
+msgid "Could not generate random data."
+msgstr "विनाक्रम डाटा निर्माण करणे अशक्य."
+
+#: ../libnm-util/nm-utils.c:2078
+#, c-format
+msgid "Not enough memory to make encryption key."
+msgstr "एनक्रिप्शन कि निर्माण करण्यास अतिरीक्त मेमरी आढळली नाही."
+
+#: ../libnm-util/nm-utils.c:2188
+msgid "Could not allocate memory for PEM file creation."
+msgstr "PEM फाइल निर्माणकरीता मेमरीचे वाटप करणे अशक्य."
+
+#: ../libnm-util/nm-utils.c:2200
+#, c-format
+msgid "Could not allocate memory for writing IV to PEM file."
+msgstr "IV ला PEM फाइलवर लिहण्यासाठी मेमरीचे वाटप करणे अशक्य."
+
+#: ../libnm-util/nm-utils.c:2212
+#, c-format
+msgid "Could not allocate memory for writing encrypted key to PEM file."
+msgstr "एनक्रिप्टेड किला PEM फाइलवर लिहण्यासाठी मेमरीचे वाटप करणे अशक्य."
+
+#: ../libnm-util/nm-utils.c:2231
+#, c-format
+msgid "Could not allocate memory for PEM file data."
+msgstr "PEM फाइल डाटाकरीता मेमरीचे वाटप करणे अशक्य."
+
+#: ../policy/org.freedesktop.NetworkManager.policy.in.in.h:1
+msgid "Enable or disable system networking"
+msgstr "प्रणाली नेटवर्किंग सुरू किंवा बंद करा"
+
+#: ../policy/org.freedesktop.NetworkManager.policy.in.in.h:2
+msgid "System policy prevents enabling or disabling system networking"
+msgstr "प्रणाली करार प्रणाली नेटवर्किंगसा सुरू किंवा बंद होण्यापासून रोखते"
+
+#: ../policy/org.freedesktop.NetworkManager.policy.in.in.h:3
+msgid ""
+"Put NetworkManager to sleep or wake it up (should only be used by system "
+"power management)"
+msgstr ""
+"NetworkManager ला स्लीप किंवा वेकअप स्तरात न्या (फक्त प्रणाली पावर "
+"मॅनेजमेंटनेच याचा "
+"वापर करावा)"
+
+#: ../policy/org.freedesktop.NetworkManager.policy.in.in.h:4
+msgid "System policy prevents putting NetworkManager to sleep or waking it up"
+msgstr ""
+"प्रणाली करार NetworkManager ला स्लीप किंवा वेकअप मध्ये जाण्यापासून रोखते"
+
+#: ../policy/org.freedesktop.NetworkManager.policy.in.in.h:5
+msgid "Enable or disable WiFi devices"
+msgstr "WiFi साधने सुरू किंवा बंद करा"
+
+#: ../policy/org.freedesktop.NetworkManager.policy.in.in.h:6
+msgid "System policy prevents enabling or disabling WiFi devices"
+msgstr "प्रणाली करार WiFi साधनांना सुरू किंवा बंद होण्यापासून रोखते"
+
+#: ../policy/org.freedesktop.NetworkManager.policy.in.in.h:7
+msgid "Enable or disable mobile broadband devices"
+msgstr "मोबाईल ब्रॉडबँड साधने सुरू किंवा बंद करा"
+
+#: ../policy/org.freedesktop.NetworkManager.policy.in.in.h:8
+msgid "System policy prevents enabling or disabling mobile broadband devices"
+msgstr "प्रणाली करार मोबाईल ब्रॉडबँड साधनांना सुरू किंवा बंद होण्यापासून रोखते"
+
+#: ../policy/org.freedesktop.NetworkManager.policy.in.in.h:9
+msgid "Enable or disable WiMAX mobile broadband devices"
+msgstr "WiMAX मोबाईल ब्रॉडबँड साधने सुरू किंवा बंद करा"
+
+#: ../policy/org.freedesktop.NetworkManager.policy.in.in.h:10
+msgid ""
+"System policy prevents enabling or disabling WiMAX mobile broadband devices"
+msgstr ""
+"प्रणाली करार WiMAX मोबाईल ब्रॉडबँड साधनांना सुरू किंवा बंद होण्यापासून रोखते"
+
+#: ../policy/org.freedesktop.NetworkManager.policy.in.in.h:11
+msgid "Allow control of network connections"
+msgstr "नेटवर्क जोडणींचे नियंत्रण स्वीकारा"
+
+#: ../policy/org.freedesktop.NetworkManager.policy.in.in.h:12
+msgid "System policy prevents control of network connections"
+msgstr "प्रणाली करार नेटवर्क जोडणीचे नियंत्रण रोखते"
+
+#: ../policy/org.freedesktop.NetworkManager.policy.in.in.h:13
+msgid "Connection sharing via a protected WiFi network"
+msgstr "सुरक्षीत WiFi नेटवर्क द्वारे जोडणीचे शेअरींग करा"
+
+#: ../policy/org.freedesktop.NetworkManager.policy.in.in.h:14
+msgid "System policy prevents sharing connections via a protected WiFi network"
+msgstr "प्रणाली करार सुरक्षीत WiFi नेटवर्क द्वारे जोडणीचे शेअरींग रोखत आहे"
+
+#: ../policy/org.freedesktop.NetworkManager.policy.in.in.h:15
+msgid "Connection sharing via an open WiFi network"
+msgstr "ओपन WiFi नेटवर्क द्वारे कनेक्शन शेअरींग करा"
+
+#: ../policy/org.freedesktop.NetworkManager.policy.in.in.h:16
+msgid "System policy prevents sharing connections via an open WiFi network"
+msgstr "प्रणाली करार ओपन WiFi नेटवर्क द्वारे जोडणीचे शेअरींग रोखत आहे"
+
+#: ../policy/org.freedesktop.NetworkManager.policy.in.in.h:17
+msgid "Modify personal network connections"
+msgstr "वैयक्तिक नेटवर्क जोडणी संपादित करा"
+
+#: ../policy/org.freedesktop.NetworkManager.policy.in.in.h:18
+msgid "System policy prevents modification of personal network settings"
+msgstr "प्रणाली करार, व्यक्तिगत नेटवर्क सेटिंग्स् संपादीत करण्यापासून रोखते"
+
+#: ../policy/org.freedesktop.NetworkManager.policy.in.in.h:19
+msgid "Modify network connections for all users"
+msgstr "सर्व वापरकर्त्यांकरीता नेटवर्क जोडणी संपादित करा"
+
+#: ../policy/org.freedesktop.NetworkManager.policy.in.in.h:20
+msgid "System policy prevents modification of network settings for all users"
+msgstr ""
+"प्रणाली करार सर्व वापरकर्त्यांना नेटवर्क सेटिंग्स् संपादीत करण्यापासून रोखते"
+
+#: ../policy/org.freedesktop.NetworkManager.policy.in.in.h:21
+msgid "Modify persistent system hostname"
+msgstr "पर्सिस्टंट प्रणाली यजमाननाव संपादीत करा"
+
+#: ../policy/org.freedesktop.NetworkManager.policy.in.in.h:22
+msgid "System policy prevents modification of the persistent system hostname"
+msgstr "प्रणाली करार पर्सिस्टंट प्रणाली यजमाननावाचे संपादन रोखत आहे"
+
+#: ../src/main.c:158
+#, c-format
+msgid "Failed to set signal mask: %d"
+msgstr "सिग्नल मास्क: %d सेट करण्यास अपयशी"
+
+#: ../src/main.c:167
+#, c-format
+msgid "Failed to create signal handling thread: %d"
+msgstr "सिग्नल हाताळणी थ्रेड: %d निर्माण करण्यास अपयशी"
+
+#: ../src/main.c:182
+#, c-format
+msgid "Opening %s failed: %s\n"
+msgstr "%s ला उघडण्यास अपयशी: %s\n"
+
+#: ../src/main.c:188
+#, c-format
+msgid "Writing to %s failed: %s\n"
+msgstr "%s करीता लिहण्यास अपयशी: %s\n"
+
+#: ../src/main.c:193
+#, c-format
+msgid "Closing %s failed: %s\n"
+msgstr "%s बंद करण्यास अपयशी: %s\n"
+
+#: ../src/main.c:236
+#, c-format
+msgid "NetworkManager is already running (pid %ld)\n"
+msgstr "NetworkManager आधिपासूनच (pid %ld) चालवत आहे\n"
+
+#: ../src/main.c:363
+msgid "Print NetworkManager version and exit"
+msgstr "NetworkManager आवृत्तीची छपाई करा व बाहेर पडा"
+
+#: ../src/main.c:364
+msgid "Don't become a daemon"
+msgstr "डिमन बनू नका"
+
+#: ../src/main.c:365
+msgid "Make all warnings fatal"
+msgstr "सर्व सावधानता धोकादायक करा"
+
+#: ../src/main.c:366
+msgid "Specify the location of a PID file"
+msgstr "PID फाइलचे ठिकाण निर्देशीत करा"
+
+#: ../src/main.c:366
+msgid "filename"
+msgstr "फाइलनाव"
+
+#: ../src/main.c:367
+msgid "State file location"
+msgstr "फाइल ठिकाण ठरवा"
+
+#: ../src/main.c:367
+msgid "/path/to/state.file"
+msgstr "/path/to/state.file"
+
+#: ../src/main.c:368
+msgid "Config file location"
+msgstr "फाइल ठिकाण संरचीत करा"
+
+#: ../src/main.c:368
+msgid "/path/to/config.file"
+msgstr "/path/to/config.file"
+
+#: ../src/main.c:369
+msgid "List of plugins separated by ','"
+msgstr "',' तर्फे विभाजीत प्लगइंस्ची सूची"
+
+#: ../src/main.c:369
+msgid "plugin1,plugin2"
+msgstr "plugin1,plugin2"
+
+#. Translators: Do not translate the values in the square brackets
+#: ../src/main.c:371
+msgid "Log level: one of [ERR, WARN, INFO, DEBUG]"
+msgstr "लॉग स्तर: [ERR, WARN, INFO, DEBUG] पैकी एक"
+
+#. Translators: Do not translate the values in the square brackets
+#: ../src/main.c:374
+msgid ""
+"Log domains separated by ',': any combination of\n"
+"                                                [NONE,HW,RFKILL,ETHER,WIFI,"
+"BT,MB,DHCP4,DHCP6,PPP,\n"
+"                                                 WIFI_SCAN,IP4,IP6,AUTOIP4,"
+"DNS,VPN,SHARING,SUPPLICANT,\n"
+"                                                 AGENTS,SETTINGS,SUSPEND,"
+"CORE,DEVICE,OLPC,WIMAX,\n"
+"                                                 INFINIBAND,FIREWALL,ADSL]"
+msgstr ""
+"',' तर्फे विभाजीत लॉग डोमैन्स्: खालीलपैकी कोणतेहि एक\n"
+"                                                [NONE,HW,RFKILL,ETHER,WIFI,"
+"BT,MB,DHCP4,DHCP6,PPP,\n"
+"                                                 WIFI_SCAN,IP4,IP6,AUTOIP4,"
+"DNS,VPN,SHARING,SUPPLICANT,\n"
+"                                                 AGENTS,SETTINGS,SUSPEND,"
+"CORE,DEVICE,OLPC,WIMAX,\n"
+"                                                 INFINIBAND,FIREWALL,ADSL]"
+
+#: ../src/main.c:380
+msgid "An http(s) address for checking internet connectivity"
+msgstr "इंटरनेट जोडणी तपासणीकरीता http(s) पत्ता"
+
+#: ../src/main.c:381
+msgid "The interval between connectivity checks (in seconds)"
+msgstr "जोडणी तपासणी (सेकंदात) अंतर्गत कालवधि"
+
+#: ../src/main.c:382
+msgid "The expected start of the response"
+msgstr "प्रतिसादाची अपेक्षित सुरूवात"
+
+#: ../src/main.c:382
+msgid "Bingo!"
+msgstr "बिंगो!"
+
+#: ../src/main.c:387
+#, c-format
+msgid "GModules are not supported on your platform!\n"
+msgstr "GModules तुमच्या प्लॅफॉर्मवर समर्थीत नाही!\n"
+
+#: ../src/main.c:406
+msgid ""
+"NetworkManager monitors all network connections and automatically\n"
+"chooses the best connection to use.  It also allows the user to\n"
+"specify wireless access points which wireless cards in the computer\n"
+"should associate with."
+msgstr ""
+"NetworkManager सर्व नेटवर्क जोडणी नियंत्रीत करतो व स्वयंरित्या वापरकरीता\n"
+"उत्तम जोडणी पसंत करतो. ते वापरकर्त्याला वायरलेस ॲक्सेस पॉईंटस् निर्देशीत "
+"करण्यास\n"
+"परवानगी देते ज्यासह संगणकातील वायरलेस\n"
+"कार्डस् संपर्क\n"
+"साधतात."
+
+#: ../src/main.c:412
+#, c-format
+msgid "Invalid option.  Please use --help to see a list of valid options.\n"
+msgstr "अवैध पर्याय.  वैध पर्यायची यादी पहाण्याकरीता कृपया --help वापरा.\n"
+
+#: ../src/main.c:422
+#, c-format
+msgid "You must be root to run NetworkManager!\n"
+msgstr "NetworkManager सुरू करण्यासाठी रूट असणे आवश्यक!\n"
+
+#: ../src/main.c:449
+#, c-format
+msgid "Failed to read configuration: (%d) %s\n"
+msgstr "संरचना: (%d) %s वाचण्यास अशक्य\n"
+
+#: ../src/main.c:460
+#, c-format
+msgid "%s.  Please use --help to see a list of valid options.\n"
+msgstr "%s.  वैध पर्यायची सूची पहाण्याकरीता कृपया --help वापरा.\n"
+
+#: ../src/main.c:467
+#, c-format
+msgid "State file %s parsing failed: (%d) %s\n"
+msgstr "स्टेट फाइल %s वाचण्यास अपयशी: (%d) %s\n"
+
+#: ../src/main.c:484
+#, c-format
+msgid "Could not daemonize: %s [error %u]\n"
+msgstr "डिमनाइज करणे अशक्य: %s [error %u]\n"
+
+#: ../src/dhcp-manager/nm-dhcp-dhclient-utils.c:61
+msgid "# Created by NetworkManager\n"
+msgstr "# NetworkManager द्वारे निर्मीत\n"
+
+#: ../src/dhcp-manager/nm-dhcp-dhclient-utils.c:68
+#, c-format
+msgid ""
+"# Merged from %s\n"
+"\n"
+msgstr ""
+"# %s पासून एकत्रीत केले\n"
+"\n"
+
+#: ../src/dhcp-manager/nm-dhcp-manager.c:266
+msgid "no usable DHCP client could be found."
+msgstr "वापरण्याजोगी DHCP क्लाएंट आढळले नाही."
+
+#: ../src/dhcp-manager/nm-dhcp-manager.c:275
+msgid "'dhclient' could be found."
+msgstr "'dhclient' आढळले नाही."
+
+#: ../src/dhcp-manager/nm-dhcp-manager.c:285
+msgid "'dhcpcd' could be found."
+msgstr "'dhcpcd' आढळले नाही."
+
+#: ../src/dhcp-manager/nm-dhcp-manager.c:293
+#, c-format
+msgid "unsupported DHCP client '%s'"
+msgstr "असमर्थीत DHCP क्लाएंट '%s'"
+
+#: ../src/dns-manager/nm-dns-manager.c:375
+msgid "NOTE: the libc resolver may not support more than 3 nameservers."
+msgstr ""
+"NOTE: libc रिजॉलव्हर 3 पेक्षा जास्त नेमसर्व्हर्स् करीता समर्थन पुरवू शकणार "
+"नाही."
+
+#: ../src/dns-manager/nm-dns-manager.c:377
+msgid "The nameservers listed below may not be recognized."
+msgstr "खालिल यादीतील नेमसर्व्हर्स् अनोळखी राहतील."
+
+#: ../src/logging/nm-logging.c:142
+#, c-format
+msgid "Unknown log level '%s'"
+msgstr "अपरिचीत लॉग स्तर '%s'"
+
+#: ../src/logging/nm-logging.c:181
+#, c-format
+msgid "Unknown log domain '%s'"
+msgstr "अपरिचीत लॉग डोमेन '%s'"
+
+#: ../src/modem-manager/nm-modem-cdma.c:280 ../src/nm-device-bt.c:351
+#, c-format
+msgid "CDMA connection %d"
+msgstr "CDMA जोडणी %d"
+
+#: ../src/modem-manager/nm-modem-gsm.c:558 ../src/nm-device-bt.c:347
+#, c-format
+msgid "GSM connection %d"
+msgstr "GSM जोडणी %d"
+
+#: ../src/nm-device-bond.c:192
+#, c-format
+msgid "Bond connection %d"
+msgstr "बाँड जोडणी %d"
+
+#: ../src/nm-device-adsl.c:193
+#, c-format
+msgid "ADSL connection %d"
+msgstr "ADSL जोडणी %d"
+
+#: ../src/nm-device-bt.c:322
+#, c-format
+msgid "PAN connection %d"
+msgstr "PAN जोडणी %d"
+
+#: ../src/nm-device-bt.c:355
+#, c-format
+msgid "DUN connection %d"
+msgstr "DUN जोडणी %d"
+
+#: ../src/nm-device-ethernet.c:1326
+#, c-format
+msgid "PPPoE connection %d"
+msgstr "PPPoE जोडणी %d"
+
+#: ../src/nm-device-ethernet.c:1326 ../src/settings/nm-settings-utils.c:50
+#, c-format
+msgid "Wired connection %d"
+msgstr "वायर्ड् जोडणी %d"
+
+#: ../src/nm-device-infiniband.c:303
+#, c-format
+msgid "InfiniBand connection %d"
+msgstr "इंफिनिबँड जोडणी %d"
+
+#: ../src/nm-device-olpc-mesh.c:311
+#, c-format
+msgid "Mesh %d"
+msgstr "मेशMesh %d"
+
+#: ../src/nm-device-vlan.c:362
+#, c-format
+msgid "VLAN connection %d"
+msgstr "VLAN जोडणी %d"
+
+#: ../src/nm-manager.c:662
+#, c-format
+msgid "VPN connection %d"
+msgstr "VPN जोडणी %d"
+
+#: ../src/nm-netlink-monitor.c:148 ../src/nm-netlink-monitor.c:272
+#: ../src/nm-netlink-monitor.c:695
+#, c-format
+msgid "error processing netlink message: %s"
+msgstr "netlink संदेश विश्लेषीत करतेवेळी त्रुटी: %s"
+
+#: ../src/nm-netlink-monitor.c:251
+msgid "error occurred while waiting for data on socket"
+msgstr "सॉकेट वरील माहिती करीता प्रतिक्षा करतेवेळी त्रुटी आढळली"
+
+#: ../src/nm-netlink-monitor.c:296
+#, c-format
+msgid "unable to connect to netlink for monitoring link status: %s"
+msgstr ""
+"दुवा स्थिती नियंत्रीत करण्याकरीता netlink शी जुळवणी स्थापीत करणे अशक्य: %s"
+
+#: ../src/nm-netlink-monitor.c:307
+#, c-format
+msgid "unable to enable netlink handle credential passing: %s"
+msgstr "netlink द्वारे परवानगी स्वीकारणे समर्थीत करण्यास अशक्य: %s"
+
+#: ../src/nm-netlink-monitor.c:330 ../src/nm-netlink-monitor.c:390
+#, c-format
+msgid "unable to allocate netlink handle for monitoring link status: %s"
+msgstr "दुवा स्थिती नियंत्रीत करण्याकरीता netlink handle चे वाटप अशक्य: %s"
+
+#: ../src/nm-netlink-monitor.c:415
+#, c-format
+msgid "unable to allocate netlink link cache for monitoring link status: %s"
+msgstr ""
+"दुवा स्थिती नियंत्रीत करण्याकरीता netlink दुवा कॅशे वाटप करणे अशक्य: %s"
+
+#: ../src/nm-netlink-monitor.c:542
+#, c-format
+msgid "unable to join netlink group: %s"
+msgstr "netlink गटसह जोडणी करणे अशक्य: %s"
+
+#: ../src/nm-netlink-monitor.c:671 ../src/nm-netlink-monitor.c:684
+#, c-format
+msgid "error updating link cache: %s"
+msgstr "दुवा कॅशे अद्ययावत करतेवेळी त्रुटी: %s"
+
+#: ../src/settings/plugins/ifcfg-rh/reader.c:93
+msgid "System"
+msgstr "प्रणाली"
+
+#: ../src/settings/plugins/ifcfg-rh/reader.c:3663
+msgid "Bond"
+msgstr "बाँड"
+
+#: ../test/nm-online.c:111
+#, c-format
+msgid "\rConnecting"
+msgstr "\rजोडणी करत आहे"
+
+#: ../test/nm-online.c:142
+msgid "Time to wait for a connection, in seconds (default is 30)"
+msgstr "जोडणीकरीता थांबण्याजोगी वेळ, सेकंदात (30 पूर्वनिर्धारित आहे)"
+
+#: ../test/nm-online.c:143
+msgid "Exit immediately if NetworkManager is not running or connecting"
+msgstr "NetworkManager सुरू नसल्यास किंवा जोडणी अशक्य असल्यास पटकन बाहेर पडा"
+
+#: ../test/nm-online.c:144
+msgid "Don't print anything"
+msgstr "काहिहि छापू नका"
+
+#: ../test/nm-online.c:162
+msgid "Waits for a successful connection in NetworkManager."
+msgstr "NetworkManager मध्ये यशस्वी जोडणीकरीता थांबतो."
+
+#: ../test/nm-online.c:168 ../test/nm-online.c:177
+msgid "Invalid option.  Please use --help to see a list of valid options."
+msgstr ""
+"अवैध पर्याय.  वैध पर्यायांची सूची पहाण्याकरीता कृपया --helpचा वापर करा."
+
+#~ msgid "state: %s\n"
+#~ msgstr "स्तर: %s\n"
+
+#~ msgid "Connection activated\n"
+#~ msgstr "जोडणी सक्रिय केली\n"
+
+#~ msgid "state: %s (%d)\n"
+#~ msgstr "स्तर: %s (%d)\n"
+
+#~ msgid "Active connection state: %s\n"
+#~ msgstr "सक्रिय जोडणीचे स्तर: %s\n"
+
+#~ msgid "Active connection path: %s\n"
+#~ msgstr "सक्रिय जोडणीचे मार्ग: %s\n"
+
+#~ msgid "IP4-SETTINGS"
+#~ msgstr "IP4-SETTINGS"
+
+#~| msgid "IP4-SETTINGS"
+#~ msgid "IP6-SETTINGS"
+#~ msgstr "IP6-SETTINGS"
+
+#~ msgid "PREFIX"
+#~ msgstr "PREFIX"
+
+#~ msgid "unknown)"
+#~ msgstr "अपरिचीत)"
+
+#~ msgid "Device state: %d (%s)\n"
+#~ msgstr "साधनाचे स्तर: %d (%s)\n"
+
+#~ msgid "not set"
+#~ msgstr "सेट केले नाही"
